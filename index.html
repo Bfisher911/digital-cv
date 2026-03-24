@@ -19,6 +19,25 @@
 </head>
 
 <body>
+    <!-- Sound Toggle -->
+    <button id="sound-toggle" class="btn-text">[ SOUND: OFF ]</button>
+
+    <!-- Persona System -->
+    <button id="persona-toggle" class="btn-text">[ PERSONA: DEFAULT ]</button>
+    <div id="persona-menu">
+        <button class="persona-option" data-persona="DEFAULT">Default Profile</button>
+        <button class="persona-option" data-persona="AI_CONSULTANT">AI Consultant</button>
+        <button class="persona-option" data-persona="TECH_PROFESSOR">Technology Professor</button>
+        <button class="persona-option" data-persona="EM_PROFESSOR">Emergency Mgmt Professor</button>
+        <button class="persona-option" data-persona="ARCHAEOLOGIST">Archaeologist</button>
+        <button class="persona-option" data-persona="GIS_RESEARCHER">GIS Researcher</button>
+    </div>
+
+    <!-- Boot Sequence Screen -->
+    <div id="boot-screen">
+        <div id="boot-text"></div>
+    </div>
+
     <nav id="navbar">
         <div class="nav-container">
             <a href="#home" class="logo">BF.</a>
@@ -57,8 +76,12 @@
                             class="fab fa-linkedin-in"></i> LinkedIn</a>
                     <a href="https://news.tulane.edu/experts/profile/dr-blaine-fisher" target="_blank"
                         class="btn btn-text">Tulane Experts <i class="fas fa-arrow-right"></i></a>
-                    <a href="https://shorturl.at/ttjkv" target="_blank" class="btn btn-text">Newsletter <i
-                            class="fas fa-arrow-right"></i></a>
+                    <a href="https://www.hstoday.us/author/blaine-fisher/" target="_blank"
+                        class="btn btn-text">HSToday Editor Bio <i class="fas fa-arrow-right"></i></a>
+                    <a href="https://sopa.tulane.edu/about-sopa/advisors-faculty-staff/blaine-fisher" target="_blank"
+                        class="btn btn-text">SoPA Faculty Bio <i class="fas fa-arrow-right"></i></a>
+                    <a href="https://shorturl.at/ttjkv" target="_blank"
+                        class="btn btn-text">Hooked on AI <i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
             <div class="scroll-indicator">
@@ -71,12 +94,27 @@
             <div class="container fade-up">
                 <div class="section-header">
                     <span class="section-subtitle">Career Path</span>
-                    <h2 class="section-title">Work Experience</h2>
+                    <h2 class="section-title glitch-hover">Work Experience</h2>
                 </div>
 
                 <div class="timeline">
                     <!-- Item 1 -->
-                    <div class="timeline-item reveal">
+                    <div class="timeline-item reveal" data-tag="em">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">2020 – Present</div>
+                            <h3 class="role">Pracademics Editor & Editorial Board Member</h3>
+                            <h4 class="company">Homeland Security Today (HSToday)</h4>
+                            <p class="location"><i class="fas fa-map-marker-alt"></i> Washington, D.C. (Remote)</p>
+                            <p class="description">Leading the Pracademic Affairs section for a premier nonprofit media
+                                outlet. Bridging the gap between scholarly research and operational practice by
+                                curating insights for the homeland security, law enforcement, and emergency management
+                                communities.</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 2 -->
+                    <div class="timeline-item reveal" data-tag="tech">
                         <div class="timeline-dot"></div>
                         <div class="timeline-content">
                             <div class="timeline-date">10/2012 – Present</div>
@@ -91,7 +129,7 @@
                     </div>
 
                     <!-- Item 2 -->
-                    <div class="timeline-item reveal">
+                    <div class="timeline-item reveal" data-tag="tech">
                         <div class="timeline-dot"></div>
                         <div class="timeline-content">
                             <div class="timeline-date">01/2022 – Present</div>
@@ -105,7 +143,7 @@
                     </div>
 
                     <!-- Item 3 -->
-                    <div class="timeline-item reveal">
+                    <div class="timeline-item reveal" data-tag="em">
                         <div class="timeline-dot"></div>
                         <div class="timeline-content">
                             <div class="timeline-date">12/2014 – Present</div>
@@ -119,7 +157,7 @@
                     </div>
 
                     <!-- Item 4 -->
-                    <div class="timeline-item reveal">
+                    <div class="timeline-item reveal" data-tag="gis">
                         <div class="timeline-dot"></div>
                         <div class="timeline-content">
                             <div class="timeline-date">01/2024 – Present</div>
@@ -129,6 +167,13 @@
                             <p class="description">Remote sensing SME for a $22M National Academies initiative. Operate
                                 LiDAR and thermal drone technology to model environmental changes in the Birdsfoot
                                 Delta, analyzing complex spatial datasets with a 14-institution consortium.</p>
+                            <div class="ascii-art">
+   \       /
+    \     /
+   ---( )---
+    /     \
+   /       \
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -140,7 +185,7 @@
             <div class="container fade-up">
                 <div class="section-header">
                     <span class="section-subtitle">Academic Background</span>
-                    <h2 class="section-title">Education & Awards</h2>
+                    <h2 class="section-title glitch-hover">Education & Awards</h2>
                 </div>
 
                 <div class="grid-2">
@@ -206,7 +251,7 @@
             <div class="container fade-up">
                 <div class="section-header">
                     <span class="section-subtitle">Thought Leadership</span>
-                    <h2 class="section-title">Speaking & Media</h2>
+                    <h2 class="section-title glitch-hover">Speaking & Media</h2>
                 </div>
 
                 <div class="cards-grid">
@@ -217,6 +262,7 @@
                         <h3>Keynote: TCC Federal Reserve Bank</h3>
                         <p>Delivered keynote to 2,000+ employees demystifying neural networks and LLMs, focusing on
                             prompt engineering, data privacy, and AI's impact on financial operations.</p>
+                        <a href="https://news.tulane.edu/experts/profile/dr-blaine-fisher" target="_blank" class="btn btn-text" style="padding: 0; margin-top: 1rem;">Learn More <i class="fas fa-arrow-right"></i></a>
                     </div>
                     <!-- Media 1 -->
                     <div class="feature-card reveal">
@@ -225,6 +271,7 @@
                         <h3>Interview: Federal Ban of AI Deepseek</h3>
                         <p>Fox News appearance discussing the congressional bill banning Chinese AI software Deepseek,
                             focusing on espionage risks and data acquisition concerns.</p>
+                        <a href="https://www.youtube.com/watch?v=6IJ0ZcxQm7o" target="_blank" class="btn btn-text" style="padding: 0; margin-top: 1rem;">Watch Video <i class="fas fa-arrow-right"></i></a>
                     </div>
                     <!-- Speaking 2 -->
                     <div class="feature-card reveal">
@@ -233,6 +280,7 @@
                         <h3>Panel Moderator: Tech Day</h3>
                         <p>Moderated expert panel debating AI innovation collison with regulatory realities, focusing on
                             data bias and policy changes for future automation.</p>
+                        <a href="https://news.tulane.edu/experts/profile/dr-blaine-fisher" target="_blank" class="btn btn-text" style="padding: 0; margin-top: 1rem;">Learn More <i class="fas fa-arrow-right"></i></a>
                     </div>
                     <!-- Media 2 -->
                     <div class="feature-card reveal">
@@ -241,6 +289,86 @@
                         <h3>Insights: Hurricane Evacuation & COVID-19</h3>
                         <p>Provided insights on the logistical clash between hurricane evacuation orders and COVID-19
                             quarantine mandates, detailing sheltering protocols.</p>
+                        <a href="https://news.tulane.edu/experts/profile/dr-blaine-fisher" target="_blank" class="btn btn-text" style="padding: 0; margin-top: 1rem;">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <!-- Media 3 -->
+                    <div class="feature-card reveal">
+                        <div class="card-icon"><i class="fas fa-robot"></i></div>
+                        <span class="date-badge">WVUE Fox 8</span>
+                        <h3>Guest: AI Bootcamp at Tulane</h3>
+                        <p>Discussed the launch and impact of the AI Bootcamp at Tulane University, highlighting how
+                            community members and professionals can leverage AI for career growth.</p>
+                        <a href="https://www.youtube.com/watch?v=A0T1aFN09oQ" target="_blank" class="btn btn-text" style="padding: 0; margin-top: 1rem;">Watch Segment <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <!-- Speaking 3 -->
+                    <div class="feature-card reveal">
+                        <div class="card-icon"><i class="fas fa-brain"></i></div>
+                        <span class="date-badge">11/2025</span>
+                        <h3>Keynote: NOAI Festival</h3>
+                        <p><strong>Title: "The Evolution of Education: From Push to Pull in an AI World"</strong></p>
+                        <p>Delivered at the New Orleans AI (NOAI) festival, exploring the ethical and pedagogical
+                            shifts required as AI transforms how we acquire knowledge and mentor students.</p>
+                        <a href="https://noai.org" target="_blank" class="btn btn-text" style="padding: 0; margin-top: 1rem;">View Event Info <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Media Archive Section -->
+        <section id="media-archive" class="media-archive section-padding">
+            <div class="container fade-up">
+                <div class="section-header">
+                    <span class="section-subtitle">Press & Features</span>
+                    <h2 class="section-title glitch-hover">Media Archive</h2>
+                </div>
+
+                <div class="media-list">
+                    <div class="media-item reveal">
+                        <div class="media-info">
+                            <span class="media-source">WVUE Fox 8 (YouTube)</span>
+                            <h3>Dr. Blaine Fisher: AI Bootcamp at Tulane University</h3>
+                        </div>
+                        <a href="https://www.youtube.com/watch?v=A0T1aFN09oQ" target="_blank" class="media-link"><i class="fas fa-play-circle"></i> Watch Video</a>
+                    </div>
+
+                    <div class="media-item reveal">
+                        <div class="media-info">
+                            <span class="media-source">The National Desk (YouTube)</span>
+                            <h3>Elon Musk's AI Company Unveils Grok 3, Claims It Outperforms Rivals</h3>
+                        </div>
+                        <a href="https://www.youtube.com/watch?v=OB4TSnfO1cw" target="_blank" class="media-link"><i class="fas fa-play-circle"></i> Watch Video</a>
+                    </div>
+
+                    <div class="media-item reveal">
+                        <div class="media-info">
+                            <span class="media-source">The National Desk (YouTube)</span>
+                            <h3>New Bill Suggests Getting Rid of DeepSeek</h3>
+                        </div>
+                        <a href="https://www.youtube.com/watch?v=6IJ0ZcxQm7o" target="_blank" class="media-link"><i class="fas fa-play-circle"></i> Watch Video</a>
+                    </div>
+
+                    <div class="media-item reveal">
+                        <div class="media-info">
+                            <span class="media-source">The National Desk</span>
+                            <h3>FBI Issues New Warning: Be On The Lookout For Specific Language In Emails</h3>
+                        </div>
+                        <a href="https://thenationaldesk.com/news/americas-news-now/fbi-issues-new-warning-be-on-the-lookout-for-specific-language-in-emails" target="_blank" class="media-link"><i class="fas fa-external-link-alt"></i> Read Article</a>
+                    </div>
+
+                    <div class="media-item reveal">
+                        <div class="media-info">
+                            <span class="media-source">NOLA.com</span>
+                            <h3>Chemical Fire in Lake Charles After Hurricane Laura Prompts Shelter-in-Place</h3>
+                        </div>
+                        <a href="https://www.nola.com/news/hurricane/chemical-fire-in-lake-charles-after-hurricane-laura-prompts-shelter-in-place/article_701d29c6-e87b-11ea-8de9-97116cc65860.html" target="_blank" class="media-link"><i class="fas fa-external-link-alt"></i> Read Article</a>
+                    </div>
+
+                    <div class="media-item reveal">
+                        <div class="media-info">
+                            <span class="media-source">iHeart Radio | Citizen Chef with Tom Colicchio</span>
+                            <h3>Disaster Relief Pt. 2: From 'Food Line' to Front Line</h3>
+                        </div>
+                        <a href="https://www.iheart.com/podcast/1119-citizen-chef-with-tom-colicchio-63316297/episode/disaster-relief-pt-2-from-food-71191316/" target="_blank" class="media-link"><i class="fas fa-headphones"></i> Listen to Podcast</a>
                     </div>
                 </div>
             </div>
@@ -251,7 +379,7 @@
             <div class="container fade-up">
                 <div class="section-header">
                     <span class="section-subtitle">Writing</span>
-                    <h2 class="section-title">Publications & Books</h2>
+                    <h2 class="section-title glitch-hover">Publications & Books</h2>
                 </div>
                 <div class="book-showcase reveal">
                     <div class="book-cover">
@@ -259,6 +387,13 @@
                             <span class="author">Dr. Blaine Fisher</span>
                             <h3 class="book-title">The AI Human</h3>
                             <span class="year">2025</span>
+                            <div class="ascii-art" style="color: var(--bg-color); margin-top: 20px;">
+        ______
+        /     /|
+        /     / |
+        |_____| /
+        |_____|/
+                            </div>
                         </div>
                     </div>
                     <div class="book-details">
@@ -277,6 +412,23 @@
             </div>
         </section>
 
+        <!-- Terminal Interface -->
+        <section id="terminal-section" class="section-padding">
+            <div class="container fade-up">
+                <div class="section-header">
+                    <span class="section-subtitle">Interface</span>
+                    <h2 class="section-title glitch-hover">MU-TH-UR 6000</h2>
+                </div>
+                <div id="terminal-container">
+                    <div id="terminal-output"></div>
+                    <div class="terminal-input-line">
+                        <span class="prompt">&gt;</span>
+                        <input type="text" id="terminal-input" autocomplete="off" spellcheck="false">
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </main>
 
     <footer class="site-footer">
@@ -289,6 +441,7 @@
                 <a href="mailto:Bfisher3@tulane.edu"><i class="fas fa-envelope"></i></a>
                 <a href="https://www.linkedin.com/in/blaine-fisher/" target="_blank"><i
                         class="fab fa-linkedin-in"></i></a>
+                <a href="https://sopa.tulane.edu/about-sopa/advisors-faculty-staff/blaine-fisher" target="_blank" title="Tulane SoPA Faculty Bio"><i class="fas fa-graduation-cap"></i></a>
             </div>
         </div>
         <div class="footer-bottom">
