@@ -23,6 +23,8 @@ The rebuilt site should use Astro as a static, content-first framework. Astro ke
 
 The landing page remains an orchestrated front door. Dedicated deep-dive routes carry the full professional record.
 
+This milestone now includes `page-content-briefs.md` as the bridge between information architecture and build work. The wireframes describe page structure. The content briefs describe page promise, draft copy direction, proof points, required cards, and route-specific flags.
+
 ## Global Structure
 
 | Route | Purpose | Primary audience | Content depth |
@@ -43,6 +45,29 @@ The landing page remains an orchestrated front door. Dedicated deep-dive routes 
 | `/press-kit` | Press and speaker assets | Journalists, event producers | Bios, headshots, fact sheet, topics, media links |
 | `/contact` | Inquiry routing | All external audiences | General, speaking, consulting, media, academic collaboration |
 | `/cv` | Canonical downloads | Hiring committees, search firms, collaborators | CV, resume, cover letter template, portfolio one-pager |
+
+## Content Density Targets
+
+The rebuilt site should feel complete on first visit and reward deeper review. These targets give Milestone 2 enough shape to build without another content planning cycle.
+
+| Route | Minimum page weight | Required evidence |
+| --- | --- | --- |
+| `/` | Full front door with hero, persona state, proof rail, and 8 to 10 route previews | 6 career threads, 6 proof metrics, all primary CTAs |
+| `/about` | 900 to 1200 words | First-person biography, interdisciplinary thesis, invitation to collaborate |
+| `/experience` | 12 role cards plus thread navigation | Titles, organizations, dates, narrative, accomplishments, related links |
+| `/teaching` | 300 to 500 word philosophy plus course and bootcamp catalog | Course groups, bootcamps, teaching recognition, LMS training platforms |
+| `/research` | 3 major sections plus method catalog | MissDelta, Dos Aguadas, methods, equipment, presentations |
+| `/publications` | Complete index with grouped records | Book, editorial leadership, peer review, newsletter, dissertation, in-development work |
+| `/book` | 400 to 600 word synopsis plus purchase and audience panels | ISBN, retailer links, themes, missing sample and review flags |
+| `/speaking` | Topic list plus year-grouped archive | Confirmed events from 2013 to 2026, recording links where available |
+| `/consulting` | Positioning page with service areas and engagement evidence | Sparkfish, Dubai, Mayo College, Federal Reserve, Louisiana associations |
+| `/newsletter` | Subscription hub plus archive model | Manual archive fields, LinkedIn dependency flag |
+| `/media` | Chronological media index | Television, podcast, print and web, embed policy |
+| `/honors` | Recognition catalog | Awards, fellowships, peer review appointment, editorial service cross-links |
+| `/credentials` | Verification-oriented credential catalog | Academic, clinical, and technology credentials |
+| `/press-kit` | Approved asset and copy hub | Bios, headshots, monogram, fact sheet, speaking topics, contact |
+| `/contact` | Routed inquiry page | Inquiry type selector, direct links, routing flags |
+| `/cv` | Download hub | Current CV fallback, canonical pack integration plan |
 
 ## Landing Page Sections
 

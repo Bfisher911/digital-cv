@@ -11,6 +11,16 @@ This inventory maps source facts to their primary destination in the rebuilt sit
 | Needs source asset | Fact is usable, but supporting media or file is missing |
 | Verify | Fact needs confirmation before launch |
 
+## Related Milestone 1 Documents
+
+| Document | Role |
+| --- | --- |
+| `architecture.md` | Defines routes, audiences, content depth, persona behavior, and cross-linking rules |
+| `wireframes.md` | Defines page structure and content order for every route |
+| `page-content-briefs.md` | Expands each route into page promise, proof points, copy direction, card requirements, and flags |
+| `verification-flags.md` | Separates confirmed content from launch-blocking unknowns |
+| `rebuild-recommendation.md` | Converts the architecture into an Astro migration plan |
+
 ## Current Site Facts
 
 | Fact | Primary page | Section | Content type | Cross-links | Status |

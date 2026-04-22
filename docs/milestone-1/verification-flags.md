@@ -70,6 +70,17 @@ This document lists unresolved facts, missing files, and decisions that must be 
 | `[FLAG: approve policy] Analytics provider` | Global | Brief allows Plausible, Fathom, or Vercel Analytics, and forbids Google Analytics | Default to no analytics until provider is selected |
 | `[FLAG: approve policy] Contact form service` | `/contact` | Form routing requires a backend or third-party service | Default to Netlify Forms if Netlify remains active |
 
+## Page Content Brief Review Items
+
+| Flag | Needed for | Why it matters | Proposed handling |
+| --- | --- | --- | --- |
+| `[FLAG: approve content direction] Landing page proof rail` | `/` | The landing page will feature a compact set of metrics and dates above the fold | Use only confirmed metrics from the brief |
+| `[FLAG: approve content direction] About page opening thesis` | `/about` | The content brief includes draft first-person opening direction | Treat as draft until master profile voice review |
+| `[FLAG: approve content direction] Teaching pedagogical thesis` | `/teaching` | The brief connects pressure, applied judgment, ethics, and AI literacy | Review before converting into final 300 to 500 word copy |
+| `[FLAG: approve content direction] Sparkfish positioning paragraph` | `/consulting` | Consulting needs clear separation from Tulane work | Review wording before public launch |
+| `[FLAG: approve content direction] Book synopsis angle` | `/book` | The book page will foreground agency, stewardship, and practical frameworks | Draft final synopsis only after book materials are available |
+| `[FLAG: approve content direction] Manual newsletter archive model` | `/newsletter` | LinkedIn API access may be unavailable | Start with manually maintained recent issues unless import access exists |
+
 ## Current Site Issues To Address In Later Milestones
 
 | Issue | Current evidence | Future fix |

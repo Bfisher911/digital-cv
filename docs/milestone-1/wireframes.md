@@ -2,6 +2,8 @@
 
 These wireframes define page structure and content intent. They do not define final visual design. The final UI should preserve the MU-TH-UR 6000 visual language with improved readability, quiet mode, and accessible interactions.
 
+Use these wireframes together with `page-content-briefs.md`. The wireframes define layout order. The page content briefs define route promises, proof points, draft copy direction, required cards, and unresolved flags.
+
 ## Shared Page Frame
 
 | Region | Content |

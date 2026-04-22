@@ -16,6 +16,8 @@ This approach fits the brief because the site is mostly content, metadata, and s
 | Performance | Minimal JavaScript by default |
 | Netlify previews | Branch deploys and deploy previews work cleanly |
 
+The implementation should use `docs/milestone-1/page-content-briefs.md` as the route-by-route content blueprint. That document contains the page promises, proof rails, draft content direction, route-specific card requirements, and unresolved flags that should become Astro content collection entries.
+
 ## Current Repo Assessment
 
 The current production repo contains:
@@ -96,6 +98,12 @@ The existing static site is valuable as a design prototype. It should not remain
 |       `-- terminal.css
 `-- docs/
     `-- milestone-1/
+        |-- architecture.md
+        |-- content-inventory.md
+        |-- page-content-briefs.md
+        |-- rebuild-recommendation.md
+        |-- verification-flags.md
+        `-- wireframes.md
 ```
 
 ## Content Collections
@@ -113,6 +121,19 @@ The existing static site is valuable as a design prototype. It should not remain
 | `downloads` | `title`, `file`, `category`, `source`, `lastUpdated`, `flags` |
 
 Flag fields should allow the build to surface unresolved items during local checks. A launch build should fail if public pages contain unresolved `[FLAG: verify with Dr. Fisher]` markers.
+
+## Content Staging Plan
+
+Milestone 2 should stage content in a way that preserves review control. The content briefs should first become structured records, then templates should render them.
+
+| Stage | Work | Output |
+| --- | --- | --- |
+| 1 | Create content schemas from the collection fields above | Type-checked frontmatter |
+| 2 | Convert confirmed facts from `content-inventory.md` into Markdown or MDX records | Initial content collection records |
+| 3 | Convert route promises and module lists from `page-content-briefs.md` into page data | Complete route scaffolds |
+| 4 | Add `[FLAG: verify with Dr. Fisher]` markers only inside draft records | Visible preview placeholders |
+| 5 | Run a flag checker before deploy preview | Report unresolved facts and launch blockers |
+| 6 | Hide or omit unresolved launch-blocking sections before production | Production pages with no visible placeholders |
 
 ## Component Library
 
