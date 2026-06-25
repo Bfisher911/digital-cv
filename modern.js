@@ -16,6 +16,35 @@
     // this script never runs the content is visible by default (no blank ship).
     document.documentElement.classList.add("js");
 
+    /* ---------- Theme toggle (light / dark) ----------
+       Initial theme is set by a tiny inline <head> script (no FOUC); here we add
+       the in-nav toggle, persist the choice, and keep the browser chrome in sync. */
+    (() => {
+        const root = document.documentElement;
+        const themeColor = $('meta[name="theme-color"]');
+        const isLight = () => root.classList.contains("light");
+        const syncMeta = () => themeColor && themeColor.setAttribute("content", isLight() ? "#f3f1ec" : "#0b0b0d");
+        syncMeta();
+        const navEnd = $(".nav-end");
+        if (!navEnd) return;
+        const btn = document.createElement("button");
+        btn.type = "button";
+        btn.className = "theme-toggle";
+        btn.innerHTML =
+            '<svg class="ic-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>' +
+            '<svg class="ic-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8z"/></svg>';
+        const relabel = () => btn.setAttribute("aria-label", isLight() ? "Switch to dark mode" : "Switch to light mode");
+        relabel();
+        btn.addEventListener("click", () => {
+            root.classList.toggle("light");
+            try { localStorage.setItem("bf-theme", isLight() ? "light" : "dark"); } catch (e) {}
+            relabel();
+            syncMeta();
+        });
+        navEnd.insertBefore(btn, navEnd.firstChild);
+        requestAnimationFrame(() => root.classList.add("theme-ready"));
+    })();
+
     /* ---------- Scroll reveal ---------- */
     const revealEls = $$("[data-reveal]");
     if (revealEls.length) {
