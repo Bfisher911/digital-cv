@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page not found — Dr. Blaine Fisher</title>
+    <meta name="robots" content="noindex">
+    <meta name="theme-color" content="#0b0b0d">
+    <link rel="icon" href="favicon-modern.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..500&family=Plus+Jakarta+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="modern.css">
+    <style>
+        .nf {
+            min-height: 100dvh;
+            display: grid;
+            place-content: center;
+            text-align: center;
+            gap: 1.4rem;
+            padding: 2rem var(--pad-x);
+            position: relative;
+            z-index: 1;
+        }
+        .nf-code { font-family: var(--mono); color: var(--accent); letter-spacing: 0.3em; font-size: 0.8rem; text-transform: uppercase; }
+        .nf h1 { font-family: var(--display); font-weight: 400; font-size: clamp(2.6rem, 9vw, 5rem); letter-spacing: -0.03em; line-height: 1; margin: 0; }
+        .nf p { color: var(--paper-2); max-width: 30rem; margin: 0 auto; }
+        .nf-actions { display: flex; flex-wrap: wrap; gap: 0.8rem; justify-content: center; margin-top: 0.6rem; }
+    </style>
+</head>
+
+<body>
+    <div class="ambient" aria-hidden="true">
+        <span class="orb orb-1"></span>
+        <span class="orb orb-2"></span>
+        <span class="grain"></span>
+    </div>
+    <main class="nf">
+        <p class="nf-code">Error 404 · signal lost</p>
+        <h1>This page drifted off the map.</h1>
+        <p>The link you followed doesn't lead anywhere — but the work, the writing, and the research are all still home.</p>
+        <div class="nf-actions">
+            <a class="btn btn-pill btn-solid" href="/">Back to home <span class="btn-ic" aria-hidden="true">&#8594;</span></a>
+            <a class="btn btn-pill btn-outline" href="classic.html">▦ Classic terminal mode</a>
+        </div>
+    </main>
+</body>
+
+</html>

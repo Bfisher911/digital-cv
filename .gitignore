@@ -1,0 +1,5 @@
+# Local tooling / OS noise — not part of the deployed site
+.claude/
+.DS_Store
+.playwright-cli/
+node_modules/

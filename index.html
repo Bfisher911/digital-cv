@@ -4,21 +4,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dr. Blaine Fisher | Digital CV and Portfolio</title>
-    <meta name="description" content="Digital CV and portfolio for Dr. Blaine Fisher, technology leader, professor, author, geospatial researcher, editorial leader, and former paramedic.">
+    <title>Dr. Blaine Fisher — Professor, AI Strategist &amp; Researcher</title>
+    <meta name="description" content="Dr. Blaine Fisher is a professor, AI strategist, educational technologist, emergency management educator, geospatial researcher, author, and former paramedic based in New Orleans.">
     <link rel="canonical" href="https://blainefisher.com/">
+
     <meta property="og:type" content="profile">
-    <meta property="og:title" content="Dr. Blaine Fisher | Digital CV and Portfolio">
-    <meta property="og:description" content="Technology and innovation leader, professor, author, geospatial researcher, editorial leader, and former paramedic.">
+    <meta property="og:title" content="Dr. Blaine Fisher — Professor, AI Strategist &amp; Researcher">
+    <meta property="og:description" content="Professor, AI strategist, educational technologist, emergency management educator, geospatial researcher, author, and former paramedic.">
     <meta property="og:url" content="https://blainefisher.com/">
     <meta property="og:image" content="https://blainefisher.com/assets/BlaineFisher2-960.webp">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Dr. Blaine Fisher | Digital CV and Portfolio">
-    <meta name="twitter:description" content="Technology and innovation leader, professor, author, geospatial researcher, editorial leader, and former paramedic.">
+    <meta name="twitter:title" content="Dr. Blaine Fisher — Professor, AI Strategist &amp; Researcher">
+    <meta name="twitter:description" content="Professor, AI strategist, educational technologist, emergency management educator, geospatial researcher, author, and former paramedic.">
     <meta name="twitter:image" content="https://blainefisher.com/assets/BlaineFisher2-960.webp">
-    <link rel="icon" href="favicon.svg" type="image/svg+xml">
-    <link rel="preload" href="assets/BlaineFisher2-480.webp" as="image" type="image/webp">
-    <link rel="stylesheet" href="styles.css">
+    <meta name="theme-color" content="#0b0b0d">
+
+    <link rel="icon" href="favicon-modern.svg" type="image/svg+xml">
+    <link rel="preload" href="assets/BlaineFisher2-960.webp" as="image" type="image/webp">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..500&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="modern.css">
+    <!-- Progressive enhancement: if JS is disabled, scroll-reveal content stays visible. -->
+    <noscript><style>.reveal,.bt-seg{opacity:1!important;transform:none!important;filter:none!important}</style></noscript>
+
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -36,36 +47,15 @@
         "url": "https://blainefisher.com/",
         "image": "https://blainefisher.com/assets/BlaineFisher2-960.webp",
         "worksFor": [
-            {
-                "@type": "CollegeOrUniversity",
-                "name": "Tulane University"
-            },
-            {
-                "@type": "Organization",
-                "name": "Sparkfish Consulting, LLC"
-            },
-            {
-                "@type": "Organization",
-                "name": "Homeland Security Today"
-            }
+            { "@type": "CollegeOrUniversity", "name": "Tulane University" },
+            { "@type": "Organization", "name": "Sparkfish Consulting, LLC" },
+            { "@type": "Organization", "name": "Homeland Security Today" }
         ],
         "alumniOf": [
-            {
-                "@type": "CollegeOrUniversity",
-                "name": "Louisiana State University"
-            },
-            {
-                "@type": "CollegeOrUniversity",
-                "name": "Tulane University"
-            },
-            {
-                "@type": "CollegeOrUniversity",
-                "name": "University of New Orleans"
-            },
-            {
-                "@type": "CollegeOrUniversity",
-                "name": "Southeastern Louisiana University"
-            }
+            { "@type": "CollegeOrUniversity", "name": "Louisiana State University" },
+            { "@type": "CollegeOrUniversity", "name": "Tulane University" },
+            { "@type": "CollegeOrUniversity", "name": "University of New Orleans" },
+            { "@type": "CollegeOrUniversity", "name": "Southeastern Louisiana University" }
         ],
         "sameAs": [
             "https://www.linkedin.com/in/blaine-fisher/",
@@ -74,698 +64,668 @@
             "https://sopa.tulane.edu/about-sopa/advisors-faculty-staff/blaine-fisher"
         ],
         "knowsAbout": [
-            "Artificial intelligence adoption",
-            "Instructional technology",
-            "Emergency management",
-            "Geospatial science",
-            "Remote sensing",
-            "Maya archaeology",
-            "Higher education strategy",
-            "AI ethics"
+            "Artificial intelligence adoption", "Instructional technology", "Emergency management",
+            "Geospatial science", "Remote sensing", "Maya archaeology", "Higher education strategy", "AI ethics"
         ]
     }
     </script>
 </head>
 
 <body>
-    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <a href="#top" class="skip-link">Skip to main content</a>
 
-    <button id="sound-toggle" class="system-toggle" type="button" aria-pressed="false">[ SOUND: OFF ]</button>
-    <button id="theme-toggle" class="system-toggle theme-toggle" type="button" aria-pressed="false">[ CONTRAST: TERMINAL ]</button>
-
-    <div class="persona-control" aria-label="Persona switcher">
-        <button id="persona-toggle" class="system-toggle persona-trigger" type="button" aria-expanded="false" aria-controls="persona-menu">[ PERSONA: DEFAULT ]</button>
-        <div id="persona-menu" class="persona-menu" role="menu" aria-label="Choose site persona">
-            <button class="persona-option" type="button" role="menuitemradio" aria-checked="true" data-persona="DEFAULT">Default Profile</button>
-            <button class="persona-option" type="button" role="menuitemradio" aria-checked="false" data-persona="AI_CONSULTANT">AI Consultant</button>
-            <button class="persona-option" type="button" role="menuitemradio" aria-checked="false" data-persona="TECH_PROFESSOR">Technology Professor</button>
-            <button class="persona-option" type="button" role="menuitemradio" aria-checked="false" data-persona="EM_PROFESSOR">Emergency Management Professor</button>
-            <button class="persona-option" type="button" role="menuitemradio" aria-checked="false" data-persona="ARCHAEOLOGIST">Archaeologist</button>
-            <button class="persona-option" type="button" role="menuitemradio" aria-checked="false" data-persona="GIS_RESEARCHER">GIS Researcher</button>
-        </div>
+    <!-- Fixed ambient texture: film grain + warm orbs. pointer-events:none, never on scrolling content. -->
+    <div class="ambient" aria-hidden="true">
+        <span class="orb orb-1"></span>
+        <span class="orb orb-2"></span>
+        <span class="grain"></span>
     </div>
 
-    <div id="boot-screen" aria-hidden="true">
-        <div id="boot-text"></div>
-    </div>
+    <!-- Transition curtain played when entering the classic terminal Easter egg. -->
+    <div class="crt-wipe" aria-hidden="true"><span class="crt-line">LOADING MU-TH-UR 6000&hellip;</span></div>
 
-    <header class="site-header">
-        <nav id="navbar" aria-label="Primary navigation">
-            <a href="#home" class="logo" aria-label="BF. Dr. Blaine Fisher home">BF.</a>
-            <button class="hamburger" type="button" aria-expanded="false" aria-controls="primary-nav">MENU</button>
-            <ul id="primary-nav" class="nav-links">
+    <!-- ============ NAVIGATION ============ -->
+    <header class="nav-shell">
+        <nav class="nav" aria-label="Primary">
+            <a href="#top" class="brand" data-logo aria-label="Blaine Fisher — home">
+                <span class="brand-mark">BF</span>
+                <span class="brand-word">Blaine&nbsp;Fisher</span>
+            </a>
+            <ul class="nav-links" id="nav-links">
                 <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#teaching">Teaching</a></li>
-                <li><a href="#research">Research</a></li>
-                <li><a href="#writing">Writing</a></li>
+                <li><a href="#expertise">Expertise</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#ventures">Ventures</a></li>
                 <li><a href="#speaking">Speaking</a></li>
-                <li><a href="#consulting">Consulting</a></li>
-                <li><a href="#press">Press</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#cv">CV</a></li>
             </ul>
+            <div class="nav-end">
+                <a href="#contact" class="btn btn-pill btn-ghost nav-cta">
+                    Get in touch
+                    <span class="btn-ic" aria-hidden="true">&#8599;</span>
+                </a>
+                <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+                    <span></span><span></span>
+                </button>
+            </div>
         </nav>
     </header>
 
-    <main id="main-content">
-        <section id="home" class="hero section-block">
+    <!-- Full-screen mobile menu -->
+    <div class="mobile-menu" id="mobile-menu" hidden>
+        <ul class="mobile-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#expertise">Expertise</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#ventures">Ventures</a></li>
+            <li><a href="#speaking">Speaking &amp; Consulting</a></li>
+            <li><a href="#cv">CV</a></li>
+            <li><a href="#writing">Writing &amp; Press</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <a class="mobile-classic" href="classic.html" data-classic>▦ Classic terminal mode</a>
+    </div>
+
+    <main id="top">
+
+        <!-- ============ HERO ============ -->
+        <section class="hero" id="hero">
             <div class="container hero-grid">
                 <div class="hero-copy">
-                    <p class="terminal-label">MU-TH-UR 6000 professional record online</p>
-                    <h1>Dr. Blaine Fisher</h1>
-                    <p class="credential-line">Ph.D., MS, MA, NRP, PG-Cert</p>
-                    <h2 id="hero-title">Technology Leader and Professor</h2>
-                    <p id="hero-summary" class="hero-summary">Technology and innovation leader, professor, author, geospatial researcher, and former paramedic. Dr. Fisher works across AI adoption, instructional technology, emergency management, remote sensing, and institutional strategy.</p>
-                    <div class="hero-actions" aria-label="Primary actions">
-                        <a class="btn btn-primary" href="book.html">Read My Book</a>
-                        <a class="btn btn-outline" href="speaking.html">Book a Keynote</a>
-                        <a class="btn btn-outline" href="research.html">Explore Research</a>
+                    <p class="eyebrow reveal" data-reveal>
+                        <span class="eyebrow-dot"></span> Professor · AI strategist · Researcher · Builder
+                    </p>
+                    <h1 class="hero-name" data-blur-text aria-label="Blaine Fisher">Blaine Fisher</h1>
+                    <p class="hero-credential reveal" data-reveal data-delay="1">Ph.D. · MS · MA · NRP · PG-Cert &nbsp;—&nbsp; New Orleans</p>
+                    <p class="hero-lede reveal" data-reveal data-delay="2">
+                        I work where technology has consequences — building
+                        <span class="glitch" data-text="AI strategy" data-hover="AI strategy">AI strategy</span>,
+                        teaching across <span class="glitch" data-text="emergency management" data-hover="resilience">emergency management</span>,
+                        and reading <span class="glitch" data-text="terrain" data-hover="terrain">terrain</span> from coastlines to Classic Maya earthworks.
+                    </p>
+                    <div class="hero-actions reveal" data-reveal data-delay="3">
+                        <a class="btn btn-pill btn-solid" href="#work">
+                            Explore the work
+                            <span class="btn-ic" aria-hidden="true">&#8594;</span>
+                        </a>
+                        <a class="btn btn-pill btn-outline" href="#ventures">Read <em>The AI Human</em></a>
                         <a class="btn btn-text" href="Blaine%20Fisher%20-%20CV.pdf">Download CV</a>
                     </div>
                 </div>
-                <div class="hero-portrait">
-                    <picture>
-                        <source srcset="assets/BlaineFisher2-480.webp 480w, assets/BlaineFisher2-960.webp 960w" type="image/webp">
-                        <img src="assets/BlaineFisher2.png" width="480" height="720" alt="Portrait of Dr. Blaine Fisher in a dark blazer">
-                    </picture>
-                </div>
-            </div>
-            <div class="container proof-rail" aria-label="Selected career proof points">
-                <a href="#experience">Tulane, 2012-present</a>
-                <a href="#teaching">2,000 plus faculty trained</a>
-                <a href="#research">$22M MissDelta initiative</a>
-                <a href="#writing">The AI Human, 2025</a>
-                <a href="#speaking">2,000 plus Federal Reserve audience</a>
-                <a href="#consulting">Sparkfish Consulting, LLC</a>
-            </div>
-        </section>
 
-        <section id="about" class="persona-section section-block bg-alt" data-personas="default,tech,em,ai,gis,arch" data-default-order="10">
-            <div class="container two-column">
-                <div>
-                    <div class="section-header">
-                        <span class="terminal-label">Biographical record</span>
-                        <h2>About</h2>
-                    </div>
-                    <div class="longform">
-                        <p>Dr. Blaine Fisher works where technology has consequences. His professional record spans enterprise AI adoption, instructional technology, emergency management, geospatial science, consulting, and teaching. The common thread is practical judgment inside complex systems. He helps people use new tools without losing sight of ethics, context, or the humans who have to live with the result.</p>
-                        <p>At Tulane University, he serves as Senior Instructional Technology Manager in the Innovative Learning Center. Since October 2012, he has worked across platform adoption, AI strategy, faculty development, and learning infrastructure for a 13,000-student institution. He administers Canvas across academic units, leads AI-focused faculty capability work, and founded WAVE, Tulane's AI Visionaries and Educators Network.</p>
-                        <p>His faculty work extends across Tulane's School of Professional Advancement and the School of Science and Engineering. He teaches information technology, emergency management, GIS, and remote sensing, with courses that range from AI in Modern Society to Health and Medical Issues in Emergency Management. His research life moves into the field: the Birdsfoot Delta through MissDelta, and Classic Maya defensive landscapes at Dos Aguadas, Guatemala.</p>
-                        <p>Dr. Fisher is the author of <cite>The AI Human: Navigating a Transformed World</cite>, the Pracademics Editor and Editorial Board Member at Homeland Security Today, and founder of Sparkfish Consulting, LLC. Before his academic technology career, he worked as a paramedic in the New Orleans region. That background still shows. He teaches and advises like someone who has seen plans meet weather, pressure, scarcity, and time.</p>
-                    </div>
-                </div>
-                <aside class="quick-facts" aria-label="Quick facts">
-                    <h3>Quick Facts</h3>
-                    <dl>
-                        <dt>Location</dt>
-                        <dd>New Orleans, LA</dd>
-                        <dt>Credentials</dt>
-                        <dd>Ph.D., MS, MA, NRP, PG-Cert</dd>
-                        <dt>Languages in progress</dt>
-                        <dd>Spanish and Yucatec Maya</dd>
-                        <dt>Personal note</dt>
-                        <dd>Fishes, pilots drones recreationally, and runs tabletop adventures when the schedule permits.</dd>
-                    </dl>
-                    <div class="external-links">
-                        <a href="https://www.linkedin.com/in/blaine-fisher/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-                        <a href="https://news.tulane.edu/experts/profile/dr-blaine-fisher" target="_blank" rel="noopener noreferrer">Tulane Experts</a>
-                        <a href="https://www.hstoday.us/author/blaine-fisher/" target="_blank" rel="noopener noreferrer">HSToday</a>
-                        <a href="https://sopa.tulane.edu/about-sopa/advisors-faculty-staff/blaine-fisher" target="_blank" rel="noopener noreferrer">SoPA Bio</a>
-                    </div>
-                </aside>
-            </div>
-        </section>
-
-        <section id="experience" class="persona-section section-block" data-personas="default,ai,tech,em,gis,arch" data-default-order="20">
-            <div class="container">
-                <div class="section-header">
-                    <span class="terminal-label">Career log</span>
-                    <h2>Experience</h2>
-                </div>
-                <div class="card-grid role-grid">
-                    <article class="terminal-card" data-personas="tech,ai,default">
-                        <p class="card-kicker">October 2012-present</p>
-                        <h3>Senior Instructional Technology Manager</h3>
-                        <p class="card-meta">Tulane University, Innovative Learning Center</p>
-                        <p>Leads enterprise academic technology work across AI adoption, Canvas administration, faculty development, and learning infrastructure. Current work includes the W.A.V.E. Workshop Series, Preflight Bootcamp, WAVE network, and three generations of Tulane internal training platforms.</p>
-                    </article>
-                    <article class="terminal-card" data-personas="tech,em,default">
-                        <p class="card-kicker">January 2022-present and December 2014-present</p>
-                        <h3>Professor, Information Technology and Emergency Management</h3>
-                        <p class="card-meta">Tulane University School of Professional Advancement</p>
-                        <p>Teaches applied technology, AI, UI/UX, enterprise applications, emergency management, and health and medical issues. Courses serve undergraduate and graduate audiences with an emphasis on practice, ethics, and decisions under pressure.</p>
-                    </article>
-                    <article class="terminal-card" data-personas="gis,arch,default">
-                        <p class="card-kicker">Current</p>
-                        <h3>Instructor, GIS and Remote Sensing</h3>
-                        <p class="card-meta">Tulane School of Science and Engineering</p>
-                        <p>Teaches geospatial and remote sensing material through Earth and Coastal Sciences and Engineering, including spatial data in restoration planning.</p>
-                        <p class="todo-note">TODO: Confirm exact title, course list, and start date for this role.</p>
-                    </article>
-                    <article class="terminal-card" data-personas="gis,default">
-                        <p class="card-kicker">January 2024-present</p>
-                        <h3>Remote Sensing and Geospatial Scientist</h3>
-                        <p class="card-meta">MissDelta, Mississippi River Delta Transition Initiative</p>
-                        <p>Works on a $22M, five-year National Academies funded consortium focused on the Birdsfoot Delta. The project includes 14 institutions and uses remote sensing, GIS, LiDAR, multispectral, thermal, and photogrammetric methods.</p>
-                    </article>
-                    <article class="terminal-card" data-personas="em,default">
-                        <p class="card-kicker">2020-present</p>
-                        <h3>Pracademics Editor and Editorial Board Member</h3>
-                        <p class="card-meta">Homeland Security Today</p>
-                        <p>Leads the Pracademic Affairs section, a peer-reviewed journal space connecting scholarly research with frontline homeland security and emergency management practice.</p>
-                    </article>
-                    <article class="terminal-card" data-personas="ai,default">
-                        <p class="card-kicker">Current</p>
-                        <h3>Founder and Principal</h3>
-                        <p class="card-meta">Sparkfish Consulting, LLC</p>
-                        <p>Runs an independent advisory practice serving executive, university, and international clients on AI adoption, AI curriculum design, enterprise technology strategy, and faculty capability building.</p>
-                    </article>
-                </div>
-                <div class="initiative-panel">
-                    <h3>Major Initiatives</h3>
-                    <ul class="signal-list">
-                        <li>W.A.V.E. Workshop Series, biweekly AI workshops for Tulane faculty and staff.</li>
-                        <li>WAVE, AI Visionaries and Educators Network, connecting Tulane faculty and staff on AI integration.</li>
-                        <li>Training Wave, TUlearn, and WaveWorks, three generations of Tulane compliance and training LMS work culminating in Oracle Learn implementation.</li>
-                        <li>Classroom Experience Assistant, a hybrid-era classroom technology support program that trained over 100 student workers.</li>
-                    </ul>
-                    <p class="todo-note">TODO: Confirm whether Tulane Environmental Health and Safety compliance work should be listed as a standalone role or ILC responsibility.</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="teaching" class="persona-section section-block bg-alt" data-personas="tech,em,gis,default" data-default-order="30">
-            <div class="container">
-                <div class="section-header">
-                    <span class="terminal-label">Teaching interface</span>
-                    <h2>Teaching</h2>
-                    <p class="section-lede">Dr. Fisher teaches applied technology and emergency management through practical work, ethical framing, and the habits people need when tools change faster than institutions.</p>
-                </div>
-                <div class="course-groups">
-                    <article class="terminal-card">
-                        <h3>Tulane SoPA Information Technology</h3>
-                        <ul class="signal-list">
-                            <li><strong>AI in Modern Society</strong>, graduate and undergraduate. Covers how AI systems shape work, learning, governance, and human agency.</li>
-                            <li><strong>AI in Action.</strong> Applies AI tools to real workflows, with attention to prompting, review, evaluation, and ethics.</li>
-                            <li><strong>Applied Artificial Intelligence.</strong> Focuses on practical AI use, institutional adoption, and responsible implementation.</li>
-                            <li><strong>The Ethics of Technology Through Science Fiction</strong>, undergraduate. Uses speculative fiction to examine responsibility, risk, design, and power.</li>
-                            <li><strong>UI/UX Design Fundamentals</strong>, undergraduate. Introduces user research, interface structure, accessibility, and design judgment.</li>
-                            <li><strong>Enterprise Applications Architecture.</strong> Examines systems, platforms, integration, governance, and institutional technology decisions.</li>
-                        </ul>
-                    </article>
-                    <article class="terminal-card">
-                        <h3>Emergency Management</h3>
-                        <ul class="signal-list">
-                            <li><strong>Health and Medical Issues in Emergency Management</strong>, graduate and undergraduate. Connects public health, medical operations, and emergency management practice.</li>
-                            <li><strong>Emergency Management Training and Exercises</strong>, undergraduate. Covers planning, training design, exercise structure, and operational readiness.</li>
-                        </ul>
-                    </article>
-                    <article class="terminal-card">
-                        <h3>School of Science and Engineering</h3>
-                        <ul class="signal-list">
-                            <li><strong>Geospatial Science and GIS Applications.</strong> Covers geospatial methods, spatial thinking, and applied analysis.</li>
-                            <li><strong>River and Stream Restoration</strong>, graduate, co-professor. Module: The Use of Spatial Data in Restoration Planning.</li>
-                        </ul>
-                        <p class="todo-note">TODO: Confirm exact public course titles and role language.</p>
-                    </article>
-                    <article class="terminal-card">
-                        <h3>Bootcamps and Faculty Development</h3>
-                        <ul class="signal-list">
-                            <li>AI Fundamentals.</li>
-                            <li>AI for Research.</li>
-                            <li>AI as a Second Brain.</li>
-                            <li>Applied AI.</li>
-                            <li>AI-enhanced course design.</li>
-                            <li>9 to 5 AI for productivity.</li>
-                            <li>Fundamentals of Artificial Intelligence bootcamp.</li>
-                            <li>Data Data Everywhere: Fundamentals of Data Science bootcamp.</li>
-                        </ul>
-                    </article>
-                </div>
-                <p class="section-link"><a href="teaching.html">Open the full teaching dossier</a></p>
-            </div>
-        </section>
-
-        <section id="research" class="persona-section section-block" data-personas="gis,arch,default" data-default-order="40">
-            <div class="container">
-                <div class="section-header">
-                    <span class="terminal-label">Remote sensing record</span>
-                    <h2>Research</h2>
-                    <p class="section-lede">The research portfolio connects coastal fieldwork, drone-based sensing, GIS analysis, and archaeology. The scale changes. The question stays grounded in terrain.</p>
-                </div>
-                <div class="research-grid">
-                    <article class="terminal-card feature-card" data-personas="gis">
-                        <p class="card-kicker">2024-2029</p>
-                        <h3>MissDelta</h3>
-                        <p class="card-meta">Mississippi River Delta Transition Initiative</p>
-                        <p>MissDelta is a $22M, five-year initiative funded by the National Academies of Sciences, Engineering, and Medicine. The consortium includes 14 institutions and focuses on the Birdsfoot Delta. Dr. Fisher contributes remote sensing and geospatial science work using LiDAR, multispectral, thermal, and photogrammetric systems.</p>
-                        <ul class="tag-list">
-                            <li>LiDAR</li>
-                            <li>Multispectral</li>
-                            <li>Thermal</li>
-                            <li>Photogrammetry</li>
-                            <li>Birdsfoot Delta</li>
-                        </ul>
-                        <a href="https://missdelta.org/" target="_blank" rel="noopener noreferrer">Visit MissDelta</a>
-                    </article>
-                    <article class="terminal-card feature-card" data-personas="arch,gis">
-                        <p class="card-kicker">LSU Ph.D., 2024</p>
-                        <h3>Dos Aguadas Maya Archaeology</h3>
-                        <p class="card-meta">Guatemalan Peten</p>
-                        <p>Dr. Fisher's dissertation examined Classic Maya defensive earthworks at Dos Aguadas through LiDAR and GIS. The work uses remote sensing, photogrammetry, spatial analysis, population estimation, least-cost path analysis, and volumetric labor investment analysis.</p>
-                        <ul class="tag-list">
-                            <li>LiDAR</li>
-                            <li>GIS</li>
-                            <li>Photogrammetry</li>
-                            <li>Least-cost path</li>
-                            <li>Line of sight</li>
-                        </ul>
-                        <a href="https://repository.lsu.edu/gradschool_dissertations/6415/" target="_blank" rel="noopener noreferrer">Read the dissertation</a>
-                    </article>
-                </div>
-                <p class="todo-note">TODO: Confirm MissDelta personal funding share, public collaborator names, and drone platform models.</p>
-                <p class="section-link"><a href="research.html">Open the full research dossier</a></p>
-            </div>
-        </section>
-
-        <section id="writing" class="persona-section section-block bg-alt" data-personas="ai,em,arch,default" data-default-order="50">
-            <div class="container">
-                <div class="section-header">
-                    <span class="terminal-label">Writing index</span>
-                    <h2>Writing, Book, Editorial Work</h2>
-                    <p class="section-lede">Writing on this site includes the book, newsletters, blog work, editorial leadership, dissertation research, and peer review service.</p>
-                </div>
-                <div class="book-showcase">
-                    <div class="book-cover" aria-label="Book cover placeholder for The AI Human">
-                        <span class="cover-author">Blaine S. Fisher</span>
-                        <span class="cover-title">The AI Human</span>
-                        <span class="cover-subtitle">Navigating a Transformed World</span>
-                        <span class="cover-year">2025</span>
-                    </div>
-                    <div class="book-details">
-                        <p class="card-kicker">2025, ISBN 979-8993144207</p>
-                        <h3>The AI Human: Navigating a Transformed World</h3>
-                        <p>The book frames AI adoption as a promotion where human value shifts from execution to stewardship. It gives educators and leaders frameworks for agency, ethics, and critical thinking in an automated world.</p>
-                        <div class="button-row">
-                            <a class="btn btn-primary" href="https://www.amazon.com/AI-Human-Navigating-Transformed-World/dp/B0FTCXVPX8" target="_blank" rel="noopener noreferrer">Amazon Print</a>
-                            <a class="btn btn-outline" href="https://www.amazon.com/AI-Human-Navigating-Transformed-World-ebook/dp/B0FQFPPJBT" target="_blank" rel="noopener noreferrer">Amazon Kindle</a>
-                            <a class="btn btn-outline" href="https://www.barnesandnoble.com/w/the-ai-human-blaine-s-fisher/1148262784" target="_blank" rel="noopener noreferrer">Barnes and Noble</a>
+                <div class="hero-portrait reveal" data-reveal data-delay="2">
+                    <div class="portrait-shell">
+                        <div class="portrait-core">
+                            <picture>
+                                <source srcset="assets/BlaineFisher2-480.webp 480w, assets/BlaineFisher2-960.webp 960w" sizes="(max-width: 720px) 80vw, 420px" type="image/webp">
+                                <img src="assets/BlaineFisher2-960.webp" width="480" height="600" alt="Portrait of Dr. Blaine Fisher in a dark blazer" loading="eager">
+                            </picture>
                         </div>
-                        <p class="todo-note">TODO: Confirm which Amazon ASIN is Kindle and which is print, and provide approved cover art.</p>
+                        <span class="portrait-tag">est. New Orleans</span>
                     </div>
                 </div>
-                <div class="card-grid">
-                    <article class="terminal-card">
-                        <h3>Hooked on AI</h3>
-                        <p>Biweekly LinkedIn newsletter on AI, work, education, and practical adoption.</p>
-                        <a href="https://shorturl.at/ttjkv" target="_blank" rel="noopener noreferrer">Subscribe on LinkedIn</a>
-                    </article>
-                    <article class="terminal-card">
-                        <h3>Tech, Temples, and Terrain</h3>
-                        <p>Notion blog connecting technology, archaeology, terrain, and field observation.</p>
-                        <a href="https://thrilling-single-644.notion.site/Tech-Temples-and-Terrain-Blog-10534ce6c96f80a58c50fbd69a5197e9" target="_blank" rel="noopener noreferrer">Read the blog</a>
-                    </article>
-                    <article class="terminal-card">
-                        <h3>ILC Newsletter</h3>
-                        <p>Biweekly articles on instructional technology for Tulane faculty and staff.</p>
-                    </article>
-                    <article class="terminal-card">
-                        <h3>Editorial and Peer Review</h3>
-                        <p>Pracademics Editor and Editorial Board Member at Homeland Security Today. Invited peer reviewer for <cite>Advances in Archaeological Practice</cite>, Cambridge University Press and Society for American Archaeology, 2026.</p>
-                    </article>
+            </div>
+
+            <div class="container">
+                <ul class="proof-rail reveal" data-reveal data-delay="3" aria-label="Selected proof points">
+                    <li><span class="proof-num">2012</span> at Tulane, and counting</li>
+                    <li><span class="proof-num">2,000+</span> faculty &amp; staff trained in AI</li>
+                    <li><span class="proof-num">$22M</span> MissDelta sensing initiative</li>
+                    <li><span class="proof-num">2025</span> author, <em>The AI Human</em></li>
+                </ul>
+            </div>
+
+            <a class="scroll-cue" href="#about" aria-label="Scroll to about">
+                <span></span>
+            </a>
+        </section>
+
+        <!-- ============ ABOUT ============ -->
+        <section class="section about" id="about">
+            <div class="container">
+                <header class="section-head">
+                    <p class="kicker">Profile</p>
+                    <h2 class="section-title">Practical judgment inside <span class="ital">complex systems.</span></h2>
+                </header>
+                <div class="about-grid">
+                    <div class="about-body">
+                        <p class="lede-para reveal" data-reveal>Dr. Blaine Fisher works where technology meets people who have to live with the result. His record spans enterprise AI adoption, instructional technology, emergency management, geospatial science, consulting, and teaching — held together by one thread: helping people use new tools without losing sight of ethics, context, or judgment.</p>
+                        <p class="reveal" data-reveal>At <strong>Tulane University</strong> he is Senior Instructional Technology Manager in the Innovative Learning Center, leading AI strategy, Canvas administration, and faculty development for a 13,000-student institution. He founded <strong>WAVE</strong>, Tulane's AI Visionaries and Educators Network, and runs the W.A.V.E. workshop series and Preflight Bootcamp.</p>
+                        <p class="reveal" data-reveal>His faculty work crosses Tulane's School of Professional Advancement and School of Science and Engineering — information technology, emergency management, GIS, and remote sensing. His research moves into the field: the Birdsfoot Delta through <strong>MissDelta</strong>, and Classic Maya defensive landscapes at <strong>Dos Aguadas, Guatemala</strong>.</p>
+                        <p class="reveal" data-reveal>He is the author of <cite>The AI Human: Navigating a Transformed World</cite>, Pracademics Editor at <strong>Homeland Security Today</strong>, and founder of <strong>Sparkfish Consulting</strong>. Before all of it, he was a paramedic in the New Orleans region — and it still shows. He teaches like someone who has watched plans meet weather, pressure, and time.</p>
+                    </div>
+                    <aside class="about-facts reveal" data-reveal>
+                        <div class="facts-card">
+                            <h3 class="facts-title">At a glance</h3>
+                            <dl class="facts-list">
+                                <div><dt>Based in</dt><dd>New Orleans, LA</dd></div>
+                                <div><dt>Credentials</dt><dd>Ph.D., MS, MA, NRP, PG-Cert</dd></div>
+                                <div><dt>Learning</dt><dd>Spanish &amp; Yucatec Maya</dd></div>
+                                <div><dt>Off the clock</dt><dd>Fishing, flying drones, running tabletop campaigns</dd></div>
+                            </dl>
+                            <div class="facts-links">
+                                <a href="https://www.linkedin.com/in/blaine-fisher/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                                <a href="https://news.tulane.edu/experts/profile/dr-blaine-fisher" target="_blank" rel="noopener noreferrer">Tulane Experts</a>
+                                <a href="https://www.hstoday.us/author/blaine-fisher/" target="_blank" rel="noopener noreferrer">HSToday</a>
+                            </div>
+                        </div>
+                    </aside>
                 </div>
-                <p class="section-link"><a href="writing.html">Open the full writing index</a></p>
             </div>
         </section>
 
-        <section id="speaking" class="persona-section section-block" data-personas="ai,tech,em,gis,arch,default" data-default-order="60">
+        <!-- ============ EXPERTISE UNIVERSE (orbiting skills) ============ -->
+        <section class="section expertise" id="expertise">
             <div class="container">
-                <div class="section-header">
-                    <span class="terminal-label">Speaking archive</span>
-                    <h2>Speaking, Workshops, Media Sessions</h2>
-                    <p class="section-lede">A reverse-chronological archive of keynotes, panels, workshops, academic presentations, and recorded sessions.</p>
+                <header class="section-head center">
+                    <p class="kicker">Expertise</p>
+                    <h2 class="section-title">A career that refuses <span class="ital">one lane.</span></h2>
+                    <p class="section-sub">Nine disciplines, one operator. Choose a facet — the brief on the right updates.</p>
+                </header>
+
+                <div class="orbit-layout">
+                    <div class="orbit" role="group" aria-label="Areas of expertise. Select one to read more.">
+                        <div class="orbit-core">
+                            <span class="orbit-core-mark">BF</span>
+                            <span class="orbit-core-sub">expertise</span>
+                        </div>
+                        <div class="orbit-ring orbit-ring-inner" data-ring="inner">
+                            <button class="orbit-node" data-facet="ai" style="--i:0;--n:4" type="button"><span>AI Strategy</span></button>
+                            <button class="orbit-node" data-facet="edtech" style="--i:1;--n:4" type="button"><span>EdTech</span></button>
+                            <button class="orbit-node" data-facet="emergency" style="--i:2;--n:4" type="button"><span>Emergency Mgmt</span></button>
+                            <button class="orbit-node" data-facet="ethics" style="--i:3;--n:4" type="button"><span>Tech Ethics</span></button>
+                        </div>
+                        <div class="orbit-ring orbit-ring-outer" data-ring="outer">
+                            <button class="orbit-node" data-facet="gis" style="--i:0;--n:5" type="button"><span>GIS &amp; Remote Sensing</span></button>
+                            <button class="orbit-node" data-facet="archaeology" style="--i:1;--n:5" type="button"><span>Archaeology</span></button>
+                            <button class="orbit-node" data-facet="paramedic" style="--i:2;--n:5" type="button"><span>Paramedic</span></button>
+                            <button class="orbit-node" data-facet="futurist" style="--i:3;--n:5" type="button"><span>Futurist</span></button>
+                            <button class="orbit-node" data-facet="author" style="--i:4;--n:5" type="button"><span>Author</span></button>
+                        </div>
+                    </div>
+
+                    <div class="facet-panel" id="facet-panel" aria-live="polite">
+                        <!-- Facet content injected/toggled here -->
+                        <article class="facet is-active" data-facet-detail="ai">
+                            <p class="facet-tag">AI Strategy &amp; Adoption</p>
+                            <h3 class="facet-title">Making AI useful without losing the plot</h3>
+                            <p class="facet-text">Enterprise AI strategy, curriculum, and faculty capability — from Tulane's WAVE network and AI bootcamps to executive advisory through Sparkfish Consulting. The work is equal parts tooling and judgment: prompting, evaluation, governance, and ethics.</p>
+                            <ul class="facet-points">
+                                <li>WAVE — AI Visionaries &amp; Educators Network</li>
+                                <li>AI bootcamps &amp; the W.A.V.E. workshop series</li>
+                                <li><cite>The AI Human</cite> — adoption as stewardship</li>
+                            </ul>
+                            <a class="facet-link" href="#ventures">See ventures &amp; featured work <span aria-hidden="true">&#8594;</span></a>
+                        </article>
+
+                        <article class="facet" data-facet-detail="edtech">
+                            <p class="facet-tag">Educational Technology</p>
+                            <h3 class="facet-title">Learning infrastructure at scale</h3>
+                            <p class="facet-text">Senior Instructional Technology Manager at Tulane since 2012 — Canvas administration across academic units, three generations of training platforms, and a classroom support program that trained 100+ student workers.</p>
+                            <ul class="facet-points">
+                                <li>Canvas LMS across a 13,000-student institution</li>
+                                <li>Training Wave → TUlearn → WaveWorks → Oracle Learn</li>
+                                <li>Classroom Experience Assistant program</li>
+                            </ul>
+                            <a class="facet-link" href="classic.html#teaching" data-classic-soft>Open the teaching dossier <span aria-hidden="true">&#8594;</span></a>
+                        </article>
+
+                        <article class="facet" data-facet-detail="emergency">
+                            <p class="facet-tag">Emergency Management</p>
+                            <h3 class="facet-title">Scholarship that meets the front line</h3>
+                            <p class="facet-text">Professor of Emergency Management and Pracademics Editor at Homeland Security Today, connecting peer-reviewed research to operational practice — health and medical issues, training and exercises, disaster planning.</p>
+                            <ul class="facet-points">
+                                <li>Pracademic Affairs — HSToday editorial board</li>
+                                <li>Health &amp; Medical Issues in Emergency Management</li>
+                                <li>Training, exercises &amp; operational readiness</li>
+                            </ul>
+                            <a class="facet-link" href="#speaking">Speaking &amp; consulting <span aria-hidden="true">&#8594;</span></a>
+                        </article>
+
+                        <article class="facet" data-facet-detail="ethics">
+                            <p class="facet-tag">Technology Ethics</p>
+                            <h3 class="facet-title">Responsibility, risk &amp; power</h3>
+                            <p class="facet-text">Ethics threaded through every course and engagement — most directly in <em>The Ethics of Technology Through Science Fiction</em>, which uses speculative fiction to examine design, accountability, and human agency.</p>
+                            <ul class="facet-points">
+                                <li>Ethics of Technology Through Science Fiction</li>
+                                <li>Responsible AI adoption &amp; governance</li>
+                                <li>Human agency in automated systems</li>
+                            </ul>
+                            <a class="facet-link" href="#work">Where it shows up in the work <span aria-hidden="true">&#8594;</span></a>
+                        </article>
+
+                        <article class="facet" data-facet-detail="gis">
+                            <p class="facet-tag">GIS &amp; Remote Sensing</p>
+                            <h3 class="facet-title">Reading the landscape from above</h3>
+                            <p class="facet-text">Remote Sensing &amp; Geospatial Scientist with MissDelta, a $22M National Academies consortium on the Birdsfoot Delta — LiDAR, multispectral, thermal, and photogrammetric methods across 14 institutions.</p>
+                            <ul class="facet-points">
+                                <li>MissDelta — Mississippi River Delta transition</li>
+                                <li>Drone-based multispectral &amp; thermal sensing</li>
+                                <li>Spatial data for coastal restoration planning</li>
+                            </ul>
+                            <a class="facet-link" href="classic.html#research" data-classic-soft>Open the research record <span aria-hidden="true">&#8594;</span></a>
+                        </article>
+
+                        <article class="facet" data-facet-detail="archaeology">
+                            <p class="facet-tag">Archaeology</p>
+                            <h3 class="facet-title">Classic Maya warfare, from LiDAR</h3>
+                            <p class="facet-text">Ph.D. in Geography and Anthropology from LSU. Dissertation: defensive earthworks at Dos Aguadas, Guatemala — strategic fortifications analyzed through LiDAR, GIS, and spatial modeling.</p>
+                            <ul class="facet-points">
+                                <li>Dos Aguadas defensive landscape study</li>
+                                <li>LiDAR + GIS + photogrammetry methods</li>
+                                <li>Terrain, sightlines &amp; strategy</li>
+                            </ul>
+                            <a class="facet-link" href="#work">Research &amp; fieldwork <span aria-hidden="true">&#8594;</span></a>
+                        </article>
+
+                        <article class="facet" data-facet-detail="paramedic">
+                            <p class="facet-tag">Paramedic (NRP)</p>
+                            <h3 class="facet-title">Where the judgment was forged</h3>
+                            <p class="facet-text">Nationally Registered Paramedic and a former first responder in the New Orleans region. The instinct for decisions under pressure, scarcity, and time runs underneath everything that came after.</p>
+                            <ul class="facet-points">
+                                <li>Frontline EMS in the New Orleans region</li>
+                                <li>Disaster relief &amp; public-health operations</li>
+                                <li>Decisions under pressure, scarcity &amp; time</li>
+                            </ul>
+                            <a class="facet-link" href="#about">How it shapes the rest <span aria-hidden="true">&#8594;</span></a>
+                        </article>
+
+                        <article class="facet" data-facet-detail="futurist">
+                            <p class="facet-tag">Futurist</p>
+                            <h3 class="facet-title">Naming what's coming, plainly</h3>
+                            <p class="facet-text">A clear, non-hype read on how AI reshapes work, learning, governance, and agency — delivered to executives, universities, and a 2,000-plus audience at the Federal Reserve.</p>
+                            <ul class="facet-points">
+                                <li>Keynotes on AI &amp; the transformed workplace</li>
+                                <li>AI in Modern Society (graduate &amp; undergraduate)</li>
+                                <li>Adoption as a shift from execution to stewardship</li>
+                            </ul>
+                            <a class="facet-link" href="#speaking">Book a keynote <span aria-hidden="true">&#8594;</span></a>
+                        </article>
+
+                        <article class="facet" data-facet-detail="author">
+                            <p class="facet-tag">Author &amp; Editor</p>
+                            <h3 class="facet-title">Writing the transition down</h3>
+                            <p class="facet-text">Author of <cite>The AI Human: Navigating a Transformed World</cite> (2025) and Pracademics Editor at Homeland Security Today, plus essays on AI, agency, and terrain.</p>
+                            <ul class="facet-points">
+                                <li><cite>The AI Human</cite> — 2025</li>
+                                <li>HSToday — Pracademic Affairs</li>
+                                <li>Essays: Hooked on AI · Tech, Temples &amp; Terrain</li>
+                            </ul>
+                            <a class="facet-link" href="#writing">Writing &amp; press <span aria-hidden="true">&#8594;</span></a>
+                        </article>
+                    </div>
                 </div>
-                <div class="filter-chips" aria-label="Filter speaking archive">
-                    <button type="button" class="filter-chip active" data-filter="all" aria-pressed="true">All</button>
-                    <button type="button" class="filter-chip" data-filter="keynote" aria-pressed="false">Keynote</button>
-                    <button type="button" class="filter-chip" data-filter="panel" aria-pressed="false">Panel</button>
-                    <button type="button" class="filter-chip" data-filter="workshop" aria-pressed="false">Workshop</button>
-                    <button type="button" class="filter-chip" data-filter="academic" aria-pressed="false">Academic</button>
-                    <button type="button" class="filter-chip" data-filter="media" aria-pressed="false">Media</button>
-                </div>
-                <div class="archive">
-                    <h3>2026</h3>
-                    <article class="archive-item speaking-entry" data-type="workshop" data-personas="em,ai">
-                        <time datetime="2026-04-14">14 April 2026</time>
-                        <h4>Louisiana District Attorneys Association, 50th Annual Support Staff Training Conference</h4>
-                        <p>Bossier City, LA. Session: AI in the Justice System: What It Is, What It Isn't, and How to Use It Wisely.</p>
-                    </article>
-                    <article class="archive-item speaking-entry" data-type="panel" data-personas="tech,ai">
-                        <time datetime="2026-03-27">27 March 2026</time>
-                        <h4>LCPA 2026 Accounting Educators Workshop</h4>
-                        <p>Lafayette, LA. Panelist for AI in the Classroom: Trends, Tools, Techniques and Trust.</p>
-                    </article>
-                    <article class="archive-item speaking-entry" data-type="media" data-personas="tech,ai">
-                        <time datetime="2026-03-11">11 March 2026</time>
-                        <h4>Big Red Education, Teaching in the Age of AI Webinar</h4>
-                        <p>Solo presenter for a recorded session on teaching, AI, and emerging classroom practice.</p>
-                        <a href="https://www.youtube.com/watch?v=cK7TIXkWaB8" target="_blank" rel="noopener noreferrer">Watch recording</a>
-                    </article>
-                    <article class="archive-item speaking-entry" data-type="workshop" data-personas="ai">
-                        <time datetime="2026-07-06">6-11 July 2026</time>
-                        <h4>Command Z: Future Tech Lab</h4>
-                        <p>Mayo College, Ajmer, India. Mentor for a residential student workshop on generative AI, ethics, and emerging tech.</p>
-                        <a href="https://bigrededucation.com/command-z-future-tech-lab/" target="_blank" rel="noopener noreferrer">View program</a>
-                    </article>
-                    <h3>2025</h3>
-                    <article class="archive-item speaking-entry" data-type="keynote" data-personas="ai,tech">
-                        <time datetime="2025-11-10">10 November 2025</time>
-                        <h4>NOAI Festival Keynote</h4>
-                        <p>New Orleans. The Evolution of Education: From Push to Pull in an AI World.</p>
-                    </article>
-                    <article class="archive-item speaking-entry" data-type="workshop" data-personas="ai">
-                        <time datetime="2025-06-26">26-29 June 2025</time>
-                        <h4>AI Skills for the Future, Futures Abroad</h4>
-                        <p>Dubai, UAE. Four-day AI Certified Workshop at Jumeirah College.</p>
-                    </article>
-                    <article class="archive-item speaking-entry" data-type="workshop" data-personas="tech,ai">
-                        <time datetime="2025-10-16">16 October 2025</time>
-                        <h4>CELT Workshop, Creating Innovative Classroom Learning Experiences Using AI</h4>
-                        <p>Tulane. Co-presented with Kay McLennan.</p>
-                    </article>
-                    <h3>2024</h3>
-                    <article class="archive-item speaking-entry" data-type="academic" data-personas="arch,gis">
-                        <time datetime="2024-10">October 2024</time>
-                        <h4>South-Central Conference on Mesoamerica</h4>
-                        <p>Baton Rouge. Strategic Fortifications and Warfare: Dos Aguadas.</p>
-                    </article>
-                    <article class="archive-item speaking-entry" data-type="workshop" data-personas="ai,tech">
-                        <time datetime="2024-09">September 2024</time>
-                        <h4>Professional Development Day</h4>
-                        <p>New Orleans. 9-5 AI: Using Artificial Intelligence for Day-to-Day Productivity.</p>
-                    </article>
-                    <article class="archive-item speaking-entry" data-type="panel" data-personas="ai,tech">
-                        <time datetime="2024-06">June 2024</time>
-                        <h4>Tech Day Panel Moderator</h4>
-                        <p>New Orleans. AI Panel: Future Predictions and Ethical Considerations.</p>
-                    </article>
-                    <h3>2023</h3>
-                    <article class="archive-item speaking-entry" data-type="panel" data-personas="tech">
-                        <time datetime="2023-12">December 2023</time>
-                        <h4>Top Hat on Campus Fireside Chat</h4>
-                        <p>Tulane. The Nexus of Technology, Pedagogy, and Equitable Learning with Dr. Bradley Cohen.</p>
-                    </article>
-                    <article class="archive-item speaking-entry" data-type="keynote" data-personas="ai">
-                        <time datetime="2023-12">December 2023</time>
-                        <h4>TCC Federal Reserve Bank Keynote</h4>
-                        <p>New Orleans. AI Decoded: From Neural Networks to Tomorrow's Intelligence. Roughly 100 in-person attendees and live-streamed to over 2,000 across multiple banks.</p>
-                    </article>
-                    <article class="archive-item speaking-entry" data-type="workshop" data-personas="tech">
-                        <time datetime="2023-12">December 2023</time>
-                        <h4>5th Annual Sparking Success</h4>
-                        <p>New Orleans. Field Guide: Using Virtual Reality to Stage Immersive Learning Activities.</p>
-                    </article>
-                    <article class="archive-item speaking-entry" data-type="workshop" data-personas="tech,ai">
-                        <time datetime="2023-11-14">14 November 2023</time>
-                        <h4>CELT Workshop, Using AI to Create your Course</h4>
-                        <p>Tulane workshop on applying AI to course design.</p>
-                    </article>
-                    <article class="archive-item speaking-entry" data-type="workshop" data-personas="tech,ai">
-                        <time datetime="2023-09-07">7 September 2023</time>
-                        <h4>CELT-ILC AI Series, AI 101</h4>
-                        <p>Tulane. Co-presented with Eunice Ofori.</p>
-                    </article>
-                    <article class="archive-item speaking-entry" data-type="workshop" data-personas="tech">
-                        <time datetime="2023-09">September 2023</time>
-                        <h4>Professional Development Day</h4>
-                        <p>New Orleans. Universal Design for Learning.</p>
-                    </article>
-                    <h3>2022 and earlier</h3>
-                    <article class="archive-item speaking-entry" data-type="workshop" data-personas="tech">
-                        <time datetime="2022-09">September 2022</time>
-                        <h4>Professional Development Day</h4>
-                        <p>New Orleans. Hybrid Learning and Lessons Learned.</p>
-                    </article>
-                    <article class="archive-item speaking-entry" data-type="academic" data-personas="arch,gis">
-                        <time datetime="2022-06">June 2022</time>
-                        <h4>Tech Day Co-Presenter</h4>
-                        <p>New Orleans. LiDAR Technology and Maya Archaeology.</p>
-                    </article>
-                    <article class="archive-item speaking-entry" data-type="workshop" data-personas="tech">
-                        <time datetime="2022-12">December 2022</time>
-                        <h4>4th Annual Sparking Success</h4>
-                        <p>Using Virtual Reality Simulations in Synchronous and Asynchronous Learning Activities.</p>
-                    </article>
-                    <article class="archive-item speaking-entry" data-type="workshop" data-personas="tech">
-                        <time datetime="2021-08-17">17 August 2021</time>
-                        <h4>CELT Workshop, Canvas 2.0 Increasing Efficiency</h4>
-                        <p>Tulane workshop on Canvas workflow efficiency.</p>
-                    </article>
-                    <article class="archive-item speaking-entry" data-type="workshop" data-personas="tech">
-                        <time datetime="2015-11">November 2015</time>
-                        <h4>DevLearn, Las Vegas</h4>
-                        <p>Leadership in Online Education.</p>
-                    </article>
-                    <article class="archive-item speaking-entry" data-type="workshop" data-personas="tech">
-                        <time datetime="2014-11">November 2014</time>
-                        <h4>DevLearn, Las Vegas</h4>
-                        <p>Standardizing Online Courses: A Programmatic Approach to Curriculum Cohesion.</p>
-                    </article>
-                    <article class="archive-item speaking-entry" data-type="workshop" data-personas="tech">
-                        <time datetime="2013-11">November 2013</time>
-                        <h4>DevLearn, Las Vegas</h4>
-                        <p>Creating and Managing Asynchronous Internal Training Programs.</p>
-                    </article>
-                </div>
-                <p class="section-link"><a href="speaking.html">Open the full speaking archive</a></p>
             </div>
         </section>
 
-        <section id="consulting" class="persona-section section-block bg-alt" data-personas="ai,gis,default" data-default-order="70">
+        <!-- ============ SELECTED WORK (bento) ============ -->
+        <section class="section work" id="work">
             <div class="container">
-                <div class="section-header">
-                    <span class="terminal-label">Advisory practice</span>
-                    <h2>Consulting</h2>
-                    <p class="section-lede">Sparkfish Consulting, LLC is Dr. Fisher's independent advisory practice for AI adoption, curriculum design, executive technology strategy, and geospatial consulting.</p>
-                </div>
-                <div class="card-grid">
-                    <article class="terminal-card">
-                        <h3>Service Areas</h3>
-                        <ul class="signal-list">
-                            <li>Enterprise AI adoption strategy.</li>
-                            <li>AI curriculum design and bootcamp delivery.</li>
-                            <li>Executive technology advisory.</li>
-                            <li>Faculty capability building for higher education.</li>
-                            <li>AI ethics consulting.</li>
-                            <li>GIS and remote sensing consulting for coastal and environmental research.</li>
+                <header class="section-head">
+                    <p class="kicker">Selected work</p>
+                    <h2 class="section-title">Four domains, <span class="ital">one operator.</span></h2>
+                </header>
+
+                <div class="bento">
+                    <article class="tile tile-lg reveal" data-reveal data-tilt>
+                        <div class="tile-top">
+                            <span class="tile-kicker">AI &amp; Educational Technology · Tulane</span>
+                            <span class="tile-index">01</span>
+                        </div>
+                        <h3 class="tile-title">Teaching an institution to use AI</h3>
+                        <p class="tile-text">Founded WAVE, Tulane's AI Visionaries &amp; Educators Network, and built the bootcamps and biweekly workshops that have trained 2,000-plus faculty and staff — alongside enterprise Canvas administration and three generations of training platforms.</p>
+                        <ul class="tag-row">
+                            <li>WAVE network</li><li>AI bootcamps</li><li>Canvas LMS</li><li>Faculty enablement</li>
                         </ul>
                     </article>
-                    <article class="terminal-card">
-                        <h3>International Reach</h3>
-                        <p>Recent engagements include executive workshops in Dubai with Futures Abroad and the Command Z Future Tech Lab at Mayo College in Ajmer, India with Big Red Education.</p>
-                        <p class="todo-note">TODO: Add Command Z promo video URL when provided.</p>
+
+                    <article class="tile tile-tall reveal" data-reveal data-tilt>
+                        <div class="tile-top">
+                            <span class="tile-kicker">Research · MissDelta &amp; Dos Aguadas</span>
+                            <span class="tile-index">02</span>
+                        </div>
+                        <h3 class="tile-title">Sensing terrain, coast to canopy</h3>
+                        <p class="tile-text">A $22M National Academies initiative on the Birdsfoot Delta, and a doctoral study of Classic Maya defensive earthworks in Guatemala — both built on LiDAR, GIS, multispectral and thermal imaging, and photogrammetry.</p>
+                        <ul class="tag-row">
+                            <li>LiDAR</li><li>Multispectral</li><li>Photogrammetry</li><li>Coastal + archaeology</li>
+                        </ul>
                     </article>
-                    <article class="terminal-card">
-                        <h3>Workshops</h3>
-                        <p>AI Fundamentals, AI for Research, AI as a Second Brain, Applied AI, AI-enhanced course design, 9 to 5 AI for productivity, data science foundations, and executive AI workshops.</p>
+
+                    <article class="tile reveal" data-reveal data-tilt>
+                        <div class="tile-top">
+                            <span class="tile-kicker">Emergency Management · HSToday</span>
+                            <span class="tile-index">03</span>
+                        </div>
+                        <h3 class="tile-title">Pracademic bridge-building</h3>
+                        <p class="tile-text">As Pracademics Editor at Homeland Security Today, connecting peer-reviewed scholarship with the people who run real operations.</p>
+                        <ul class="tag-row"><li>Editorial</li><li>Disaster planning</li><li>Health &amp; medical</li></ul>
+                    </article>
+
+                    <article class="tile reveal" data-reveal data-tilt>
+                        <div class="tile-top">
+                            <span class="tile-kicker">Teaching · Tulane SoPA &amp; SSE</span>
+                            <span class="tile-index">04</span>
+                        </div>
+                        <h3 class="tile-title">Courses that meet the moment</h3>
+                        <p class="tile-text">AI in Modern Society, Applied AI, UI/UX, Enterprise Applications, the Ethics of Technology through Science Fiction, GIS, and Health &amp; Medical Issues in Emergency Management.</p>
+                        <ul class="tag-row"><li>Applied AI</li><li>UI/UX</li><li>GIS</li><li>Ethics</li></ul>
                     </article>
                 </div>
-                <p class="section-link"><a href="consulting.html">Open the consulting page</a></p>
             </div>
         </section>
 
-        <section id="press" class="persona-section section-block" data-personas="ai,em,default" data-default-order="80">
+        <!-- ============ VENTURES / FEATURED ============ -->
+        <section class="section ventures" id="ventures">
             <div class="container">
-                <div class="section-header">
-                    <span class="terminal-label">Public signal</span>
-                    <h2>Press, Media, Press Kit</h2>
+                <header class="section-head">
+                    <p class="kicker">Ventures &amp; featured</p>
+                    <h2 class="section-title">What I'm building <span class="ital">right now.</span></h2>
+                </header>
+
+                <div class="venture-grid">
+                    <article class="venture venture-feature reveal" data-reveal data-tilt>
+                        <div class="venture-head">
+                            <span class="venture-badge">Book · 2025</span>
+                        </div>
+                        <h3 class="venture-title"><cite>The AI Human</cite></h3>
+                        <p class="venture-sub">Navigating a Transformed World</p>
+                        <p class="venture-text">A practical guide to AI adoption as a shift from execution to stewardship — agency, ethics, and critical thinking for people who have to make the tools work.</p>
+                        <a class="venture-link" href="classic.html#writing" data-classic-soft>About the book <span aria-hidden="true">&#8594;</span></a>
+                    </article>
+
+                    <article class="venture reveal" data-reveal data-tilt>
+                        <div class="venture-head"><span class="venture-badge">AI venture</span></div>
+                        <h3 class="venture-title">RocketProof.ai</h3>
+                        <p class="venture-text">AI strategy and assurance — helping teams and institutions adopt AI they can actually trust, with the guardrails to back it up.</p>
+                        <a class="venture-link" href="https://rocketproof.ai" target="_blank" rel="noopener noreferrer">Visit RocketProof <span aria-hidden="true">&#8599;</span></a>
+                    </article>
+
+                    <article class="venture reveal" data-reveal data-tilt>
+                        <div class="venture-head"><span class="venture-badge">EdTech venture</span></div>
+                        <h3 class="venture-title">RocketCourse</h3>
+                        <p class="venture-text">Course-building, accelerated — turning subject-matter expertise into well-designed, AI-assisted learning experiences.</p>
+                        <a class="venture-link" href="#contact">Request early access <span aria-hidden="true">&#8594;</span></a>
+                    </article>
+
+                    <article class="venture reveal" data-reveal data-tilt>
+                        <div class="venture-head"><span class="venture-badge">Advisory</span></div>
+                        <h3 class="venture-title">Sparkfish Consulting</h3>
+                        <p class="venture-text">An independent practice serving executive, university, and international clients on AI adoption, curriculum design, and enterprise technology strategy.</p>
+                        <a class="venture-link" href="#contact">Start a conversation <span aria-hidden="true">&#8594;</span></a>
+                    </article>
+
+                    <article class="venture reveal" data-reveal data-tilt>
+                        <div class="venture-head"><span class="venture-badge">Community</span></div>
+                        <h3 class="venture-title">WAVE Network</h3>
+                        <p class="venture-text">Tulane's AI Visionaries &amp; Educators Network — connecting faculty and staff around real, responsible AI integration.</p>
+                        <a class="venture-link" href="#work">How it started <span aria-hidden="true">&#8594;</span></a>
+                    </article>
                 </div>
-                <div class="media-grid">
-                    <article class="media-card" data-personas="ai">
-                        <p class="card-kicker">The National Desk, 19 February 2025</p>
-                        <h3>Elon Musk's AI Company Unveils Grok 3</h3>
-                        <a href="https://www.youtube.com/watch?v=OB4TSnfO1cw" target="_blank" rel="noopener noreferrer">Watch video</a>
-                    </article>
-                    <article class="media-card" data-personas="ai">
-                        <p class="card-kicker">The National Desk, 7 February 2025</p>
-                        <h3>New Bill Suggests Getting Rid of DeepSeek</h3>
-                        <a href="https://www.youtube.com/watch?v=6IJ0ZcxQm7o" target="_blank" rel="noopener noreferrer">Watch video</a>
-                    </article>
-                    <article class="media-card" data-personas="ai">
-                        <p class="card-kicker">The National Desk, 21 January 2025</p>
-                        <h3>FBI warning on phishing language</h3>
-                        <a href="https://thenationaldesk.com/news/americas-news-now/fbi-issues-new-warning-be-on-the-lookout-for-specific-language-in-emails" target="_blank" rel="noopener noreferrer">Read article</a>
-                    </article>
-                    <article class="media-card" data-personas="tech,ai">
-                        <p class="card-kicker">WVUE Fox 8</p>
-                        <h3>AI Bootcamp at Tulane University</h3>
-                        <a href="https://www.youtube.com/watch?v=A0T1aFN09oQ" target="_blank" rel="noopener noreferrer">Watch video</a>
-                    </article>
-                    <article class="media-card" data-personas="em">
-                        <p class="card-kicker">NOLA.com, August 2020</p>
-                        <h3>Chemical fire in Lake Charles after Hurricane Laura</h3>
-                        <a href="https://www.nola.com/news/hurricane/chemical-fire-in-lake-charles-after-hurricane-laura-prompts-shelter-in-place/article_701d29c6-e87b-11ea-8de9-97116cc65860.html" target="_blank" rel="noopener noreferrer">Read article</a>
-                    </article>
-                    <article class="media-card" data-personas="em">
-                        <p class="card-kicker">Citizen Chef with Tom Colicchio, June 2020</p>
-                        <h3>Disaster Relief Pt. 2: From Food Line to Front Line</h3>
-                        <a href="https://www.iheart.com/podcast/1119-citizen-chef-with-tom-colicchio-63316297/episode/disaster-relief-pt-2-from-food-71191316/" target="_blank" rel="noopener noreferrer">Listen to podcast</a>
-                    </article>
-                </div>
-                <div id="downloads" class="downloads-panel">
-                    <h3>Press Kit and Downloads</h3>
-                    <div class="download-grid">
-                        <a href="Blaine%20Fisher%20-%20CV.pdf">Full CV PDF</a>
-                        <a href="CONTENT_TODOS.md">TODO: Executive resume PDF pending</a>
-                        <a href="CONTENT_TODOS.md">TODO: Speaker one-sheet pending</a>
-                        <a href="CONTENT_TODOS.md">TODO: Media kit zip pending</a>
-                    </div>
-                    <div class="bio-grid">
-                        <article>
-                            <h4>Short Bio, 50 Words</h4>
-                            <p>Dr. Blaine Fisher is a technology and innovation leader, professor, author, geospatial researcher, and former paramedic. He leads AI and instructional technology work at Tulane, teaches across technology and emergency management, studies remote sensing and Maya archaeology, and advises institutions through Sparkfish Consulting.</p>
-                        </article>
-                        <article>
-                            <h4>Medium Bio, 150 Words</h4>
-                            <p>Dr. Blaine Fisher is a technology and innovation leader, professor, author, geospatial researcher, editorial leader, and former paramedic based in New Orleans. At Tulane University, he serves as Senior Instructional Technology Manager in the Innovative Learning Center and teaches Information Technology and Emergency Management through the School of Professional Advancement. His work includes enterprise AI adoption, Canvas administration, faculty development, and AI workshops for faculty and staff. He is a remote sensing and geospatial scientist with MissDelta, a $22M National Academies funded Mississippi River Delta research initiative, and his LSU doctoral research examined Classic Maya defensive earthworks at Dos Aguadas, Guatemala through LiDAR and GIS. He is the author of <cite>The AI Human: Navigating a Transformed World</cite>, Pracademics Editor and Editorial Board Member at Homeland Security Today, and founder of Sparkfish Consulting, LLC.</p>
-                        </article>
-                    </div>
-                    <p class="todo-note">TODO: Add long bio, high-res headshot, speaker one-sheet, and media kit when approved assets are provided.</p>
-                </div>
-                <p class="section-link"><a href="press.html">Open the full press page</a></p>
+                <p class="micro-note reveal" data-reveal>Venture descriptions are positioning summaries pending final founder-approved copy and links. <!-- TODO: confirm RocketProof.ai + RocketCourse taglines, logos, and canonical URLs (see CONTENT_TODOS.md). --></p>
             </div>
         </section>
 
-        <section id="education" class="persona-section section-block bg-alt" data-personas="default,tech,em,gis,arch" data-default-order="90">
+        <!-- ============ SPEAKING & CONSULTING ============ -->
+        <section class="section speaking" id="speaking">
             <div class="container">
-                <div class="section-header">
-                    <span class="terminal-label">Credentials</span>
-                    <h2>Education and Awards</h2>
+                <div class="speaking-grid">
+                    <div class="speaking-copy">
+                        <header class="section-head">
+                            <p class="kicker">Speaking &amp; consulting</p>
+                            <h2 class="section-title">Keynotes, workshops, <span class="ital">and advisory.</span></h2>
+                        </header>
+                        <p class="lede-para reveal" data-reveal>From a 2,000-plus audience at the Federal Reserve to faculty workshops and executive advisory rooms, Dr. Fisher translates AI, emergency management, and geospatial work into language a room can act on.</p>
+                        <div class="speaking-actions reveal" data-reveal>
+                            <a class="btn btn-pill btn-solid" href="#contact">Book a keynote <span class="btn-ic" aria-hidden="true">&#8594;</span></a>
+                            <a class="btn btn-text" href="classic.html#speaking" data-classic-soft>See the full archive</a>
+                        </div>
+                    </div>
+                    <ul class="speaking-list">
+                        <li class="reveal" data-reveal>
+                            <span class="sp-type">Keynote</span>
+                            <span class="sp-title">AI &amp; the transformed workplace</span>
+                            <span class="sp-meta">Executive &amp; institutional audiences</span>
+                        </li>
+                        <li class="reveal" data-reveal>
+                            <span class="sp-type">Workshop</span>
+                            <span class="sp-title">AI bootcamps &amp; faculty enablement</span>
+                            <span class="sp-meta">Hands-on, role-specific, ethics-first</span>
+                        </li>
+                        <li class="reveal" data-reveal>
+                            <span class="sp-type">Advisory</span>
+                            <span class="sp-title">AI adoption &amp; curriculum strategy</span>
+                            <span class="sp-meta">Sparkfish Consulting engagements</span>
+                        </li>
+                        <li class="reveal" data-reveal>
+                            <span class="sp-type">Panel</span>
+                            <span class="sp-title">Emergency management &amp; resilience</span>
+                            <span class="sp-meta">Pracademic perspective, HSToday</span>
+                        </li>
+                    </ul>
                 </div>
-                <div class="timeline-list">
-                    <article>
-                        <time>2024</time>
-                        <h3>Ph.D., Geography and Anthropology</h3>
-                        <p>Louisiana State University. Dissertation: Strategic Fortifications and Warfare: Analyzing Defensive Earthworks at Dos Aguadas, Guatemala through LiDAR and GIS.</p>
-                    </article>
-                    <article>
-                        <time>2018</time>
-                        <h3>Post-Graduate Certificate, Geographic Information Systems</h3>
-                        <p>Tulane University.</p>
-                    </article>
-                    <article>
-                        <time>2017</time>
-                        <h3>Master's, Liberal Arts</h3>
-                        <p>Tulane University. Concentration in anthropology and emergency management.</p>
-                    </article>
-                    <article>
-                        <time>2012</time>
-                        <h3>Master of Science, Health Care Management</h3>
-                        <p>University of New Orleans.</p>
-                    </article>
-                    <article>
-                        <time>2010</time>
-                        <h3>Bachelor of General Studies</h3>
-                        <p>Southeastern Louisiana University. Minors in Health Education and Promotion, and History.</p>
-                    </article>
-                    <article>
-                        <time>2008</time>
-                        <h3>Paramedic, Emergency Medical Technology</h3>
-                        <p>National EMS Academy.</p>
-                    </article>
+            </div>
+        </section>
+
+        <!-- ============ CV / TIMELINE ============ -->
+        <section class="section cv" id="cv">
+            <div class="container">
+                <header class="section-head">
+                    <p class="kicker">Curriculum vitae</p>
+                    <h2 class="section-title">The record, <span class="ital">web-native.</span></h2>
+                    <p class="section-sub">A modern read of the long version. <a class="inline-link" href="Blaine%20Fisher%20-%20CV.pdf">Download the full CV (PDF)</a>.</p>
+                </header>
+
+                <div class="cv-grid">
+                    <div class="cv-col">
+                        <h3 class="cv-col-title">Experience</h3>
+                        <ol class="timeline">
+                            <li class="reveal" data-reveal>
+                                <span class="tl-year">2012 — now</span>
+                                <div class="tl-body">
+                                    <h4>Senior Instructional Technology Manager</h4>
+                                    <p>Tulane University · Innovative Learning Center</p>
+                                </div>
+                            </li>
+                            <li class="reveal" data-reveal>
+                                <span class="tl-year">2014 — now</span>
+                                <div class="tl-body">
+                                    <h4>Professor, IT &amp; Emergency Management</h4>
+                                    <p>Tulane School of Professional Advancement</p>
+                                </div>
+                            </li>
+                            <li class="reveal" data-reveal>
+                                <span class="tl-year">2024 — now</span>
+                                <div class="tl-body">
+                                    <h4>Remote Sensing &amp; Geospatial Scientist</h4>
+                                    <p>MissDelta · National Academies initiative</p>
+                                </div>
+                            </li>
+                            <li class="reveal" data-reveal>
+                                <span class="tl-year">2020 — now</span>
+                                <div class="tl-body">
+                                    <h4>Pracademics Editor &amp; Board Member</h4>
+                                    <p>Homeland Security Today</p>
+                                </div>
+                            </li>
+                            <li class="reveal" data-reveal>
+                                <span class="tl-year">Current</span>
+                                <div class="tl-body">
+                                    <h4>Founder &amp; Principal</h4>
+                                    <p>Sparkfish Consulting, LLC</p>
+                                </div>
+                            </li>
+                        </ol>
+                    </div>
+
+                    <div class="cv-col">
+                        <h3 class="cv-col-title">Education</h3>
+                        <ol class="timeline">
+                            <li class="reveal" data-reveal>
+                                <span class="tl-year">2024</span>
+                                <div class="tl-body">
+                                    <h4>Ph.D., Geography &amp; Anthropology</h4>
+                                    <p>Louisiana State University — LiDAR &amp; GIS analysis of Maya earthworks</p>
+                                </div>
+                            </li>
+                            <li class="reveal" data-reveal>
+                                <span class="tl-year">2018</span>
+                                <div class="tl-body">
+                                    <h4>PG-Cert, Geographic Information Systems</h4>
+                                    <p>Tulane University</p>
+                                </div>
+                            </li>
+                            <li class="reveal" data-reveal>
+                                <span class="tl-year">2017</span>
+                                <div class="tl-body">
+                                    <h4>M.A., Liberal Arts</h4>
+                                    <p>Tulane — anthropology &amp; emergency management</p>
+                                </div>
+                            </li>
+                            <li class="reveal" data-reveal>
+                                <span class="tl-year">2012</span>
+                                <div class="tl-body">
+                                    <h4>M.S., Health Care Management</h4>
+                                    <p>University of New Orleans</p>
+                                </div>
+                            </li>
+                            <li class="reveal" data-reveal>
+                                <span class="tl-year">2008</span>
+                                <div class="tl-body">
+                                    <h4>Paramedic, Emergency Medical Technology</h4>
+                                    <p>National EMS Academy</p>
+                                </div>
+                            </li>
+                        </ol>
+                    </div>
                 </div>
-                <div class="card-grid honors-grid">
-                    <article class="terminal-card">
-                        <h3>John Percy Dyer Award for Teaching Excellence</h3>
-                        <p>May 2017, Tulane School of Professional Advancement.</p>
-                        <a href="https://sopa.tulane.edu/about-sopa/advisors-faculty-staff/faculty-honors/dyer-award" target="_blank" rel="noopener noreferrer">Award page</a>
+
+                <div class="honors reveal" data-reveal>
+                    <h3 class="cv-col-title">Selected honors</h3>
+                    <ul class="honors-row">
+                        <li><strong>John Percy Dyer Award</strong><span>Teaching Excellence · Tulane SoPA, 2017</span></li>
+                        <li><strong>Faculty Fellow</strong><span>Tulane SoPA &amp; Newcomb College Institute</span></li>
+                        <li><strong>Sigma Iota Epsilon</strong><span>Induction · UNO, 2012</span></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ WRITING & PRESS ============ -->
+        <section class="section writing" id="writing">
+            <div class="container">
+                <header class="section-head">
+                    <p class="kicker">Writing &amp; press</p>
+                    <h2 class="section-title">On the record, <span class="ital">in print and on air.</span></h2>
+                </header>
+                <div class="writing-grid">
+                    <article class="write-card write-feature reveal" data-reveal>
+                        <span class="write-kind">Book</span>
+                        <h3><cite>The AI Human: Navigating a Transformed World</cite></h3>
+                        <p>A field guide for living and working alongside AI — agency, ethics, and stewardship over hype.</p>
+                        <a class="facet-link" href="classic.html#writing" data-classic-soft>Read more <span aria-hidden="true">&#8594;</span></a>
                     </article>
-                    <article class="terminal-card">
-                        <h3>Sigma Iota Epsilon Induction</h3>
-                        <p>University of New Orleans, November 2012.</p>
+                    <article class="write-card reveal" data-reveal>
+                        <span class="write-kind">Essays</span>
+                        <h3>Hooked on AI · Tech, Temples &amp; Terrain</h3>
+                        <p>Selected essays on AI adoption, attention, and the places where technology meets landscape.</p>
                     </article>
-                    <article class="terminal-card">
-                        <h3>Faculty Fellow</h3>
-                        <p>Tulane SoPA and Newcomb College Institute.</p>
+                    <article class="write-card reveal" data-reveal>
+                        <span class="write-kind">Editorial</span>
+                        <h3>HSToday — Pracademic Affairs</h3>
+                        <p>Peer-reviewed space connecting scholarship with frontline homeland security practice.</p>
+                        <a class="facet-link" href="https://www.hstoday.us/author/blaine-fisher/" target="_blank" rel="noopener noreferrer">Author page <span aria-hidden="true">&#8599;</span></a>
                     </article>
-                    <article class="terminal-card">
-                        <h3>ZOOper Star, Employee of the Year</h3>
-                        <p>Audubon Nature Institute, January 2010.</p>
+                    <article class="write-card reveal" data-reveal>
+                        <span class="write-kind">Press</span>
+                        <h3>The National Desk · WVUE Fox 8 · NOLA.com</h3>
+                        <p>Commentary on AI, cybersecurity, and disaster response across regional and national media.</p>
+                        <a class="facet-link" href="classic.html#press" data-classic-soft>Press archive <span aria-hidden="true">&#8594;</span></a>
                     </article>
                 </div>
             </div>
         </section>
 
-        <section id="contact" class="persona-section section-block" data-personas="default,ai,tech,em,gis,arch" data-default-order="100">
-            <div class="container two-column">
-                <div>
-                    <div class="section-header">
-                        <span class="terminal-label">Contact router</span>
-                        <h2>Contact</h2>
+        <!-- ============ CONTACT ============ -->
+        <section class="section contact" id="contact">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-copy">
+                        <header class="section-head">
+                            <p class="kicker">Contact</p>
+                            <h2 class="section-title">Let's build something <span class="ital">thoughtful.</span></h2>
+                        </header>
+                        <p class="lede-para">Speaking, consulting, teaching, press, or research collaboration — tell me what you're working on and how I can help.</p>
+                        <div class="contact-direct">
+                            <a class="contact-line" href="mailto:Bfisher3@tulane.edu">
+                                <span class="cl-label">Email</span>
+                                <span class="cl-value">Bfisher3@tulane.edu</span>
+                            </a>
+                            <a class="contact-line" href="https://www.linkedin.com/in/blaine-fisher/" target="_blank" rel="noopener noreferrer">
+                                <span class="cl-label">LinkedIn</span>
+                                <span class="cl-value">in/blaine-fisher</span>
+                            </a>
+                        </div>
                     </div>
-                    <form class="contact-form" action="mailto:Bfisher3@tulane.edu" method="post" enctype="text/plain">
-                        <label for="inquiry-type">Inquiry type</label>
-                        <select id="inquiry-type" name="Inquiry type">
-                            <option>Speaking</option>
-                            <option>Consulting</option>
-                            <option>Press</option>
-                            <option>Teaching</option>
-                            <option>Research collaboration</option>
-                            <option>General</option>
-                        </select>
-                        <label for="name">Name</label>
-                        <input id="name" name="Name" type="text" autocomplete="name">
-                        <label for="email">Email</label>
-                        <input id="email" name="Email" type="email" autocomplete="email">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="Message" rows="6"></textarea>
-                        <button class="btn btn-primary" type="submit">Open Email Draft</button>
+
+                    <form class="contact-form" id="contact-form" action="mailto:Bfisher3@tulane.edu" method="post" enctype="text/plain" novalidate>
+                        <div class="field">
+                            <label for="inquiry">Inquiry type</label>
+                            <select id="inquiry" name="Inquiry">
+                                <option>Speaking</option>
+                                <option>Consulting</option>
+                                <option>Teaching</option>
+                                <option>Press</option>
+                                <option>Research collaboration</option>
+                                <option>General</option>
+                            </select>
+                        </div>
+                        <div class="field">
+                            <label for="cname">Name</label>
+                            <input id="cname" name="Name" type="text" autocomplete="name" required aria-describedby="err-cname">
+                            <p class="field-error" id="err-cname" data-error-for="cname">Please add your name.</p>
+                        </div>
+                        <div class="field">
+                            <label for="cemail">Email</label>
+                            <input id="cemail" name="Email" type="email" autocomplete="email" required aria-describedby="err-cemail">
+                            <p class="field-error" id="err-cemail" data-error-for="cemail">Please add a valid email.</p>
+                        </div>
+                        <div class="field">
+                            <label for="cmsg">Message</label>
+                            <textarea id="cmsg" name="Message" rows="4" required aria-describedby="err-cmsg"></textarea>
+                            <p class="field-error" id="err-cmsg" data-error-for="cmsg">A short note helps me route this.</p>
+                        </div>
+                        <button class="btn btn-pill btn-solid btn-block" type="submit">
+                            Open email draft <span class="btn-ic" aria-hidden="true">&#8594;</span>
+                        </button>
                     </form>
-                </div>
-                <aside class="quick-facts">
-                    <h3>Direct Lines</h3>
-                    <p><a href="mailto:Bfisher3@tulane.edu">Bfisher3@tulane.edu</a></p>
-                    <p><a href="https://www.linkedin.com/in/blaine-fisher/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
-                    <p><a href="contact.html">Open contact page</a></p>
-                    <p class="todo-note">TODO: Confirm preferred consulting and press contact line if separate from Tulane email.</p>
-                </aside>
-            </div>
-        </section>
-
-        <section id="terminal-section" class="section-block bg-alt">
-            <div class="container">
-                <div class="section-header">
-                    <span class="terminal-label">Interface</span>
-                    <h2>MU-TH-UR 6000</h2>
-                </div>
-                <div id="terminal-container">
-                    <div id="terminal-output" aria-live="polite"></div>
-                    <label class="terminal-input-line" for="terminal-input">
-                        <span class="prompt">&gt;</span>
-                        <input type="text" id="terminal-input" autocomplete="off" spellcheck="false" aria-label="Terminal command input">
-                    </label>
                 </div>
             </div>
         </section>
     </main>
 
+    <!-- ============ FOOTER ============ -->
     <footer class="site-footer">
-        <div class="container footer-grid">
-            <div>
-                <h2>Dr. Blaine Fisher</h2>
+        <div class="container footer-inner">
+            <div class="footer-brand">
+                <span class="footer-mark">Blaine Fisher</span>
                 <p>Technology, pedagogy, resilience, and terrain.</p>
             </div>
-            <nav aria-label="Footer links">
+            <nav class="footer-nav" aria-label="Footer">
                 <a href="mailto:Bfisher3@tulane.edu">Email</a>
                 <a href="https://www.linkedin.com/in/blaine-fisher/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-                <a href="Blaine%20Fisher%20-%20CV.pdf">CV PDF</a>
-                <a href="CONTENT_TODOS.md">Content TODOs</a>
+                <a href="Blaine%20Fisher%20-%20CV.pdf">CV (PDF)</a>
             </nav>
         </div>
-        <p class="footer-bottom">&copy; 2026 Dr. Blaine Fisher. All rights reserved.</p>
+        <div class="container footer-bottom">
+            <p>&copy; 2026 Dr. Blaine Fisher. All rights reserved.</p>
+            <!-- Easter egg: the preserved retro MU-TH-UR 6000 terminal lives one click away. -->
+            <a class="classic-egg" href="classic.html" data-classic title="Boot the original MU-TH-UR 6000 terminal — try typing &quot;retro&quot; anywhere, too.">
+                <span class="egg-glyph" aria-hidden="true">▦</span> classic terminal mode
+            </a>
+        </div>
     </footer>
 
-    <script src="script.js" defer></script>
+    <script src="modern.js" defer></script>
 </body>
 
 </html>

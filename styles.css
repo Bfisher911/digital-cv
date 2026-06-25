@@ -326,6 +326,21 @@ strong {
     bottom: 4.1rem;
 }
 
+/* Return path out of the preserved classic experience back to the modern site. */
+.modern-exit {
+    right: 1rem;
+    bottom: 7.2rem;
+    text-decoration: none;
+    border-color: var(--accent-cool);
+    color: var(--accent-cool);
+}
+
+.modern-exit:hover,
+.modern-exit:focus-visible {
+    background: var(--accent-cool);
+    color: var(--bg-color);
+}
+
 .persona-control {
     position: fixed;
     left: 1rem;

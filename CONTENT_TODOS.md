@@ -2,6 +2,13 @@
 
 These items belong on the expanded site, but they need owner confirmation before final publication. Do not replace these with guesses.
 
+## Modern redesign (index.html) — Ventures section
+
+- TODO: Confirm the final tagline/description and canonical URL for **RocketProof.ai** (currently links to https://rocketproof.ai with placeholder positioning copy).
+- TODO: Confirm the final tagline/description and a real link for **RocketCourse** (currently links to the contact section with placeholder positioning copy).
+- TODO: Provide logos/brand marks for RocketProof.ai and RocketCourse if they should appear as venture cards.
+- NOTE: The new modern site is the default homepage. The retro MU-TH-UR 6000 experience is preserved at `classic.html` (+ the deep-dive pages) and is reachable as an Easter egg (footer link, the word "retro"/"classic", the Konami code, or a triple-click on the logo).
+
 ## Teaching
 
 - TODO: Confirm the exact title, course list, and start date for the School of Science and Engineering teaching role.
