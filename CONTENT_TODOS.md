@@ -4,10 +4,10 @@ These items belong on the expanded site, but they need owner confirmation before
 
 ## Modern redesign (index.html) — Ventures section
 
-- TODO: Confirm the final tagline/description and canonical URL for **RocketProof.ai** (currently links to https://rocketproof.ai with placeholder positioning copy).
-- TODO: Confirm the final tagline/description and a real link for **RocketCourse** (currently links to the contact section with placeholder positioning copy).
-- TODO: Provide logos/brand marks for RocketProof.ai and RocketCourse if they should appear as venture cards.
-- NOTE: The new modern site is the default homepage. The retro MU-TH-UR 6000 experience is preserved at `classic.html` (+ the deep-dive pages) and is reachable as an Easter egg (footer link, the word "retro"/"classic", the Konami code, or a triple-click on the logo).
+- DONE: RocketProof.ai and RocketCourse copy now uses the real descriptions pulled from the live product sites. RocketProof.ai links to https://rocketproof.ai; RocketCourse links to https://thecourseforge.netlify.app.
+- TODO: The RocketCourse custom domain `rocketcourse.app` does not resolve yet — when it goes live, repoint the RocketCourse venture link from the Netlify URL to https://rocketcourse.app.
+- TODO (optional): Provide logos/brand marks for RocketProof.ai and RocketCourse if they should appear on the venture cards.
+- NOTE: The new modern site is the default homepage, with modern deep-dive pages at the primary URLs (`teaching/research/writing/book/speaking/consulting/press/contact.html`). The retro MU-TH-UR 6000 experience is preserved at `classic.html` + `classic/*.html` and is reachable as an Easter egg (footer link, the word "retro"/"classic", the Konami code, or a triple-click on the logo).
 
 ## Teaching
 
