@@ -110,6 +110,23 @@
         activate("ai");
     }
 
+    /* ---------- Speaking archive filter (deep-dive page) ---------- */
+    const chips = $$(".filter-chip");
+    if (chips.length) {
+        const items = $$(".archive-item");
+        chips.forEach((chip) => {
+            chip.addEventListener("click", () => {
+                const f = chip.dataset.filter;
+                chips.forEach((c) => {
+                    const on = c === chip;
+                    c.classList.toggle("active", on);
+                    c.setAttribute("aria-pressed", String(on));
+                });
+                items.forEach((it) => { it.hidden = f !== "all" && it.dataset.type !== f; });
+            });
+        });
+    }
+
     /* ---------- Magnetic primary buttons ---------- */
     if (canHover && !reduceMotion) {
         $$(".btn-solid").forEach((btn) => {

@@ -1,41 +1,138 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Consulting | Dr. Blaine Fisher</title>
-    <meta name="description" content="Sparkfish Consulting, LLC, Dr. Blaine Fisher's advisory practice for AI adoption, AI curriculum design, executive technology strategy, and GIS consulting.">
+    <title>Consulting — Sparkfish Consulting · Dr. Blaine Fisher</title>
+    <meta name="description" content="Sparkfish Consulting, LLC — Dr. Blaine Fisher's advisory practice for enterprise AI adoption, AI curriculum and bootcamps, executive advisory, AI ethics, and GIS/remote sensing.">
     <link rel="canonical" href="https://blainefisher.com/consulting.html">
-    <meta property="og:title" content="Consulting | Dr. Blaine Fisher">
+    <meta property="og:type" content="profile">
+    <meta property="og:title" content="Consulting — Sparkfish Consulting · Dr. Blaine Fisher">
     <meta property="og:description" content="AI adoption strategy, curriculum design, executive advisory, and geospatial consulting.">
+    <meta property="og:url" content="https://blainefisher.com/consulting.html">
     <meta property="og:image" content="https://blainefisher.com/assets/BlaineFisher2-960.webp">
     <meta name="twitter:card" content="summary_large_image">
-    <link rel="icon" href="favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="styles.css">
+    <meta name="twitter:title" content="Consulting — Sparkfish Consulting · Dr. Blaine Fisher">
+    <meta name="twitter:description" content="AI adoption strategy, curriculum design, executive advisory, and geospatial consulting.">
+    <meta name="theme-color" content="#0b0b0d">
+    <link rel="icon" href="favicon-modern.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..500&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="modern.css">
+    <noscript><style>.reveal,.bt-seg{opacity:1!important;transform:none!important;filter:none!important}</style></noscript>
 </head>
+
 <body>
-    <a href="#main-content" class="skip-link">Skip to main content</a>
-    <button id="sound-toggle" class="system-toggle" type="button" aria-pressed="false">[ SOUND: OFF ]</button>
-    <button id="theme-toggle" class="system-toggle theme-toggle" type="button" aria-pressed="false">[ CONTRAST: TERMINAL ]</button>
-    <div id="boot-screen" aria-hidden="true"><div id="boot-text"></div></div>
-    <header class="site-header"><nav id="navbar" aria-label="Primary navigation"><a href="classic.html#home" class="logo" aria-label="BF. Dr. Blaine Fisher home">BF.</a><button class="hamburger" type="button" aria-expanded="false" aria-controls="primary-nav">MENU</button><ul id="primary-nav" class="nav-links"><li><a href="classic.html#about">About</a></li><li><a href="teaching.html">Teaching</a></li><li><a href="research.html">Research</a></li><li><a href="writing.html">Writing</a></li><li><a href="speaking.html">Speaking</a></li><li><a href="consulting.html">Consulting</a></li><li><a href="press.html">Press</a></li><li><a href="contact.html">Contact</a></li></ul></nav></header>
-    <main id="main-content">
-        <section class="section-block">
+    <a href="#top" class="skip-link">Skip to main content</a>
+    <div class="ambient" aria-hidden="true"><span class="orb orb-1"></span><span class="orb orb-2"></span><span class="grain"></span></div>
+    <div class="crt-wipe" aria-hidden="true"><span class="crt-line">LOADING MU-TH-UR 6000&hellip;</span></div>
+
+    <header class="nav-shell">
+        <nav class="nav" aria-label="Primary">
+            <a href="index.html" class="brand" data-logo aria-label="Blaine Fisher — home"><span class="brand-mark">BF</span><span class="brand-word">Blaine&nbsp;Fisher</span></a>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="teaching.html">Teaching</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="writing.html">Writing</a></li>
+                <li><a href="speaking.html">Speaking</a></li>
+                <li><a href="consulting.html" aria-current="page">Consulting</a></li>
+                <li><a href="press.html">Press</a></li>
+            </ul>
+            <div class="nav-end">
+                <a href="contact.html" class="btn btn-pill btn-ghost nav-cta">Get in touch <span class="btn-ic" aria-hidden="true">&#8599;</span></a>
+                <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu"><span></span><span></span></button>
+            </div>
+        </nav>
+    </header>
+    <div class="mobile-menu" id="mobile-menu" hidden>
+        <ul class="mobile-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="teaching.html">Teaching</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="writing.html">Writing</a></li>
+            <li><a href="book.html">The AI Human</a></li>
+            <li><a href="speaking.html">Speaking</a></li>
+            <li><a href="consulting.html">Consulting</a></li>
+            <li><a href="press.html">Press</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <a class="mobile-classic" href="classic.html" data-classic>▦ Classic terminal mode</a>
+    </div>
+
+    <main id="top">
+        <section class="page-hero">
             <div class="container">
-                <div class="section-header"><span class="terminal-label">Advisory practice</span><h1>Sparkfish Consulting, LLC</h1><p class="section-lede">Independent advisory practice serving executive, university, and international clients on AI adoption, AI curriculum design, enterprise technology strategy, and geospatial consulting.</p></div>
-                <div class="card-grid">
-                    <article class="terminal-card"><h2>Enterprise AI Adoption</h2><p>Strategy, capability building, governance, workflow design, and practical adoption planning for complex organizations.</p></article>
-                    <article class="terminal-card"><h2>Curriculum and Bootcamps</h2><p>AI workshops, faculty development, executive training, and course design for applied AI literacy.</p></article>
-                    <article class="terminal-card"><h2>Executive Advisory</h2><p>Decision support for leaders navigating emerging technology, risk, readiness, and institutional change.</p></article>
-                    <article class="terminal-card"><h2>AI Ethics Consulting</h2><p>Human agency, stewardship, academic integrity, and critical review practices.</p></article>
-                    <article class="terminal-card"><h2>GIS and Remote Sensing</h2><p>Coastal, environmental, and research applications grounded in geospatial methods.</p></article>
-                    <article class="terminal-card"><h2>International Engagements</h2><p>Futures Abroad executive workshops in Dubai and Command Z Future Tech Lab at Mayo College, Ajmer, India.</p><p class="todo-note">TODO: Add Command Z promo video URL.</p></article>
+                <a class="back-link" href="index.html"><span aria-hidden="true">&#8592;</span> Blaine Fisher</a>
+                <p class="kicker reveal" data-reveal>Sparkfish Consulting, LLC</p>
+                <h1 class="page-title reveal" data-reveal data-delay="1">Advisory for AI you can <span class="ital">actually trust.</span></h1>
+                <p class="page-lede reveal" data-reveal data-delay="2">An independent practice serving executive, university, and international clients on AI adoption, curriculum design, enterprise technology strategy, and geospatial work.</p>
+            </div>
+        </section>
+
+        <section class="section" style="padding-top:0">
+            <div class="container">
+                <div class="grid-cards">
+                    <article class="tile reveal" data-reveal data-tilt>
+                        <div class="tile-top"><span class="tile-kicker">01</span></div>
+                        <h2 class="tile-title">Enterprise AI adoption</h2>
+                        <p class="tile-text">Strategy, capability building, governance, workflow design, and practical adoption planning for complex organizations.</p>
+                    </article>
+                    <article class="tile reveal" data-reveal data-tilt>
+                        <div class="tile-top"><span class="tile-kicker">02</span></div>
+                        <h2 class="tile-title">Curriculum &amp; bootcamps</h2>
+                        <p class="tile-text">AI workshops, faculty development, executive training, and course design for applied AI literacy.</p>
+                    </article>
+                    <article class="tile reveal" data-reveal data-tilt>
+                        <div class="tile-top"><span class="tile-kicker">03</span></div>
+                        <h2 class="tile-title">Executive advisory</h2>
+                        <p class="tile-text">Decision support for leaders navigating emerging technology, risk, readiness, and institutional change.</p>
+                    </article>
+                    <article class="tile reveal" data-reveal data-tilt>
+                        <div class="tile-top"><span class="tile-kicker">04</span></div>
+                        <h2 class="tile-title">AI ethics consulting</h2>
+                        <p class="tile-text">Human agency, stewardship, academic integrity, and critical review practices.</p>
+                    </article>
+                    <article class="tile reveal" data-reveal data-tilt>
+                        <div class="tile-top"><span class="tile-kicker">05</span></div>
+                        <h2 class="tile-title">GIS &amp; remote sensing</h2>
+                        <p class="tile-text">Coastal, environmental, and research applications grounded in geospatial methods.</p>
+                    </article>
+                    <article class="tile reveal" data-reveal data-tilt>
+                        <div class="tile-top"><span class="tile-kicker">06</span></div>
+                        <h2 class="tile-title">International engagements</h2>
+                        <p class="tile-text">Futures Abroad executive workshops in Dubai, and the Command Z Future Tech Lab at Mayo College, Ajmer, India.</p>
+                    </article>
                 </div>
-                <p class="section-link"><a href="contact.html">Start a consulting inquiry</a></p>
+
+                <div class="cta-band reveal" data-reveal>
+                    <h2>Have a problem worth thinking through?</h2>
+                    <div class="cta-actions">
+                        <a class="btn btn-pill btn-solid" href="contact.html">Start a consulting inquiry <span class="btn-ic" aria-hidden="true">&#8594;</span></a>
+                        <a class="btn btn-pill btn-outline" href="speaking.html">See speaking &amp; workshops</a>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
-    <footer class="site-footer"><div class="container footer-grid"><div><h2>Dr. Blaine Fisher</h2><p>Sparkfish Consulting.</p></div><nav aria-label="Footer links"><a href="speaking.html">Speaking</a><a href="book.html">Book</a><a href="contact.html">Contact</a></nav></div></footer>
-    <script src="script.js" defer></script>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div class="footer-brand"><span class="footer-mark">Blaine Fisher</span><p>Technology, pedagogy, resilience, and terrain.</p></div>
+            <nav class="footer-nav" aria-label="Footer">
+                <a href="index.html">Home</a>
+                <a href="mailto:Bfisher3@tulane.edu">Email</a>
+                <a href="https://www.linkedin.com/in/blaine-fisher/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <a href="Blaine%20Fisher%20-%20CV.pdf">CV (PDF)</a>
+            </nav>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; 2026 Dr. Blaine Fisher. All rights reserved.</p>
+            <a class="classic-egg" href="classic.html" data-classic title="Boot the original MU-TH-UR 6000 terminal — try typing &quot;retro&quot; anywhere, too."><span class="egg-glyph" aria-hidden="true">▦</span> classic terminal mode</a>
+        </div>
+    </footer>
+    <script src="modern.js" defer></script>
 </body>
+
 </html>

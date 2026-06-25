@@ -1,101 +1,153 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teaching | Dr. Blaine Fisher</title>
-    <meta name="description" content="Teaching portfolio for Dr. Blaine Fisher, including AI, information technology, emergency management, GIS, remote sensing, and faculty development.">
+    <title>Teaching — Dr. Blaine Fisher</title>
+    <meta name="description" content="Dr. Blaine Fisher's teaching: AI, information technology, UI/UX, enterprise applications, emergency management, GIS and remote sensing, plus AI bootcamps and faculty development at Tulane.">
     <link rel="canonical" href="https://blainefisher.com/teaching.html">
-    <meta property="og:title" content="Teaching | Dr. Blaine Fisher">
-    <meta property="og:description" content="Courses, workshops, bootcamps, and teaching philosophy from Dr. Blaine Fisher.">
+    <meta property="og:type" content="profile">
+    <meta property="og:title" content="Teaching — Dr. Blaine Fisher">
+    <meta property="og:description" content="Courses, bootcamps, and a teaching philosophy built for tools that change faster than institutions.">
+    <meta property="og:url" content="https://blainefisher.com/teaching.html">
     <meta property="og:image" content="https://blainefisher.com/assets/BlaineFisher2-960.webp">
     <meta name="twitter:card" content="summary_large_image">
-    <link rel="icon" href="favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="styles.css">
+    <meta name="twitter:title" content="Teaching — Dr. Blaine Fisher">
+    <meta name="twitter:description" content="Courses, bootcamps, and a teaching philosophy built for tools that change faster than institutions.">
+    <meta name="theme-color" content="#0b0b0d">
+    <link rel="icon" href="favicon-modern.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..500&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="modern.css">
+    <noscript><style>.reveal,.bt-seg{opacity:1!important;transform:none!important;filter:none!important}</style></noscript>
 </head>
+
 <body>
-    <a href="#main-content" class="skip-link">Skip to main content</a>
-    <button id="sound-toggle" class="system-toggle" type="button" aria-pressed="false">[ SOUND: OFF ]</button>
-    <button id="theme-toggle" class="system-toggle theme-toggle" type="button" aria-pressed="false">[ CONTRAST: TERMINAL ]</button>
-    <div id="boot-screen" aria-hidden="true"><div id="boot-text"></div></div>
-    <header class="site-header">
-        <nav id="navbar" aria-label="Primary navigation">
-            <a href="classic.html#home" class="logo" aria-label="BF. Dr. Blaine Fisher home">BF.</a>
-            <button class="hamburger" type="button" aria-expanded="false" aria-controls="primary-nav">MENU</button>
-            <ul id="primary-nav" class="nav-links">
-                <li><a href="classic.html#about">About</a></li>
-                <li><a href="teaching.html">Teaching</a></li>
+    <a href="#top" class="skip-link">Skip to main content</a>
+    <div class="ambient" aria-hidden="true"><span class="orb orb-1"></span><span class="orb orb-2"></span><span class="grain"></span></div>
+    <div class="crt-wipe" aria-hidden="true"><span class="crt-line">LOADING MU-TH-UR 6000&hellip;</span></div>
+
+    <header class="nav-shell">
+        <nav class="nav" aria-label="Primary">
+            <a href="index.html" class="brand" data-logo aria-label="Blaine Fisher — home"><span class="brand-mark">BF</span><span class="brand-word">Blaine&nbsp;Fisher</span></a>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="teaching.html" aria-current="page">Teaching</a></li>
                 <li><a href="research.html">Research</a></li>
                 <li><a href="writing.html">Writing</a></li>
                 <li><a href="speaking.html">Speaking</a></li>
                 <li><a href="consulting.html">Consulting</a></li>
                 <li><a href="press.html">Press</a></li>
-                <li><a href="contact.html">Contact</a></li>
             </ul>
+            <div class="nav-end">
+                <a href="contact.html" class="btn btn-pill btn-ghost nav-cta">Get in touch <span class="btn-ic" aria-hidden="true">&#8599;</span></a>
+                <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu"><span></span><span></span></button>
+            </div>
         </nav>
     </header>
-    <main id="main-content">
-        <section class="section-block">
+    <div class="mobile-menu" id="mobile-menu" hidden>
+        <ul class="mobile-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="teaching.html">Teaching</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="writing.html">Writing</a></li>
+            <li><a href="book.html">The AI Human</a></li>
+            <li><a href="speaking.html">Speaking</a></li>
+            <li><a href="consulting.html">Consulting</a></li>
+            <li><a href="press.html">Press</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <a class="mobile-classic" href="classic.html" data-classic>▦ Classic terminal mode</a>
+    </div>
+
+    <main id="top">
+        <section class="page-hero">
             <div class="container">
-                <div class="section-header">
-                    <span class="terminal-label">Teaching interface</span>
-                    <h1>Teaching</h1>
-                    <p class="section-lede">Dr. Fisher teaches applied technology and emergency management through practical work, ethical framing, and the pressure-tested habits that make tools useful.</p>
+                <a class="back-link" href="index.html"><span aria-hidden="true">&#8592;</span> Blaine Fisher</a>
+                <p class="kicker reveal" data-reveal>Teaching</p>
+                <h1 class="page-title reveal" data-reveal data-delay="1">Applied technology, taught <span class="ital">under pressure.</span></h1>
+                <p class="page-lede reveal" data-reveal data-delay="2">Courses across AI, UI/UX, enterprise systems, emergency management, and geospatial science — built on practical work, ethical framing, and the habits people need when tools change faster than institutions.</p>
+            </div>
+        </section>
+
+        <section class="section" style="padding-top:0">
+            <div class="container">
+                <div class="lede-block reveal" data-reveal>
+                    <p>The teaching begins with use. Students and faculty need enough conceptual structure to understand what a system is doing, enough fluency to work with it, and enough skepticism to know when the output needs review. That balance runs through every course.</p>
+                    <p>The paramedic background shows up in the shape of the work — explanation to scenario, scenario to decision, decision to consequence. The classroom is calm; the habits are built for rooms that aren't.</p>
                 </div>
-                <div class="longform">
-                    <p>His teaching begins with use. Students and faculty need enough conceptual structure to understand what a system is doing, enough practical fluency to work with it, and enough skepticism to know when the output needs review. That balance appears across AI, UI/UX, enterprise platforms, emergency management, GIS, and remote sensing.</p>
-                    <p>The paramedic background matters here. It shows up in the way courses move from explanation to scenario, from scenario to decision, and from decision to consequence. The classroom is calm, but the habits are built for less tidy rooms.</p>
+
+                <div class="grid-cards">
+                    <article class="tile reveal" data-reveal data-tilt>
+                        <div class="tile-top"><span class="tile-kicker">Tulane SoPA · Information Technology</span></div>
+                        <h2 class="tile-title">AI, UI/UX &amp; enterprise systems</h2>
+                        <ul class="facet-points">
+                            <li><strong>AI in Modern Society</strong> — AI as social, technical &amp; institutional force</li>
+                            <li><strong>AI in Action</strong> — applied workflows, review habits, implementation</li>
+                            <li><strong>Applied Artificial Intelligence</strong> — adoption &amp; responsible use</li>
+                            <li><strong>Ethics of Technology Through Science Fiction</strong></li>
+                            <li><strong>UI/UX Design Fundamentals</strong> — research, usability, accessibility</li>
+                            <li><strong>Enterprise Applications Architecture</strong></li>
+                        </ul>
+                    </article>
+                    <article class="tile reveal" data-reveal data-tilt>
+                        <div class="tile-top"><span class="tile-kicker">Emergency Management</span></div>
+                        <h2 class="tile-title">Health, medical &amp; readiness</h2>
+                        <ul class="facet-points">
+                            <li><strong>Health &amp; Medical Issues in Emergency Management</strong> — public health, medical operations &amp; crisis response</li>
+                            <li><strong>Emergency Management Training &amp; Exercises</strong> — readiness, exercise design &amp; evaluation</li>
+                        </ul>
+                    </article>
+                    <article class="tile reveal" data-reveal data-tilt>
+                        <div class="tile-top"><span class="tile-kicker">School of Science &amp; Engineering</span></div>
+                        <h2 class="tile-title">Geospatial science &amp; GIS</h2>
+                        <ul class="facet-points">
+                            <li><strong>Geospatial Science &amp; GIS Applications</strong> — spatial thinking &amp; applied analysis</li>
+                            <li><strong>River &amp; Stream Restoration</strong> (graduate, co-professor) — spatial data in restoration planning</li>
+                        </ul>
+                        <p class="todo-note">Exact public titles for the SSE role pending confirmation.</p>
+                    </article>
+                    <article class="tile reveal" data-reveal data-tilt>
+                        <div class="tile-top"><span class="tile-kicker">Bootcamps &amp; intensives</span></div>
+                        <h2 class="tile-title">Faculty &amp; staff enablement</h2>
+                        <ul class="facet-points">
+                            <li>AI Fundamentals · AI for Research · AI as a Second Brain</li>
+                            <li>Applied AI · AI-enhanced course design</li>
+                            <li>9-to-5 AI for productivity</li>
+                            <li>Fundamentals of Artificial Intelligence bootcamp</li>
+                            <li>Data Data Everywhere — Fundamentals of Data Science</li>
+                        </ul>
+                    </article>
                 </div>
-                <div class="course-groups">
-                    <article class="terminal-card">
-                        <h2>Tulane SoPA Information Technology</h2>
-                        <ul class="signal-list">
-                            <li>AI in Modern Society, graduate and undergraduate, examines AI systems as social, technical, and institutional forces.</li>
-                            <li>AI in Action teaches applied AI workflows, review habits, and practical implementation.</li>
-                            <li>Applied Artificial Intelligence focuses on adoption, workflow design, and responsible use.</li>
-                            <li>The Ethics of Technology Through Science Fiction, undergraduate, uses speculative fiction to examine power, design, and responsibility.</li>
-                            <li>UI/UX Design Fundamentals, undergraduate, introduces research, usability, accessibility, and interface decisions.</li>
-                            <li>Enterprise Applications Architecture examines platforms, integration, governance, and institutional systems.</li>
-                        </ul>
-                    </article>
-                    <article class="terminal-card">
-                        <h2>Emergency Management</h2>
-                        <ul class="signal-list">
-                            <li>Health and Medical Issues in Emergency Management, graduate and undergraduate, connects public health, medical operations, crisis response, and emergency planning.</li>
-                            <li>Emergency Management Training and Exercises, undergraduate, covers readiness, training design, exercise structure, and applied evaluation.</li>
-                        </ul>
-                    </article>
-                    <article class="terminal-card">
-                        <h2>Science and Engineering</h2>
-                        <ul class="signal-list">
-                            <li>Geospatial Science and GIS Applications covers spatial thinking, geospatial methods, and applied analysis.</li>
-                            <li>River and Stream Restoration, graduate, co-professor. Module: The Use of Spatial Data in Restoration Planning.</li>
-                        </ul>
-                        <p class="todo-note">TODO: Confirm exact title, course list, and start date for the School of Science and Engineering teaching role.</p>
-                    </article>
-                    <article class="terminal-card">
-                        <h2>Bootcamps and Intensives</h2>
-                        <ul class="signal-list">
-                            <li>AI Fundamentals.</li>
-                            <li>AI for Research.</li>
-                            <li>AI as a Second Brain.</li>
-                            <li>Applied AI.</li>
-                            <li>AI-enhanced course design.</li>
-                            <li>9 to 5 AI for productivity.</li>
-                            <li>Fundamentals of Artificial Intelligence bootcamp.</li>
-                            <li>Data Data Everywhere: Fundamentals of Data Science bootcamp.</li>
-                        </ul>
-                    </article>
+
+                <div class="cta-band reveal" data-reveal>
+                    <h2>Bringing a workshop or course to your team?</h2>
+                    <div class="cta-actions">
+                        <a class="btn btn-pill btn-solid" href="contact.html">Start a conversation <span class="btn-ic" aria-hidden="true">&#8594;</span></a>
+                        <a class="btn btn-pill btn-outline" href="speaking.html">See speaking &amp; workshops</a>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
+
     <footer class="site-footer">
-        <div class="container footer-grid">
-            <div><h2>Dr. Blaine Fisher</h2><p>Teaching, technology, and practice.</p></div>
-            <nav aria-label="Footer links"><a href="classic.html">Home</a><a href="Blaine%20Fisher%20-%20CV.pdf">CV PDF</a><a href="contact.html">Contact</a></nav>
+        <div class="container footer-inner">
+            <div class="footer-brand"><span class="footer-mark">Blaine Fisher</span><p>Technology, pedagogy, resilience, and terrain.</p></div>
+            <nav class="footer-nav" aria-label="Footer">
+                <a href="index.html">Home</a>
+                <a href="mailto:Bfisher3@tulane.edu">Email</a>
+                <a href="https://www.linkedin.com/in/blaine-fisher/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <a href="Blaine%20Fisher%20-%20CV.pdf">CV (PDF)</a>
+            </nav>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; 2026 Dr. Blaine Fisher. All rights reserved.</p>
+            <a class="classic-egg" href="classic.html" data-classic title="Boot the original MU-TH-UR 6000 terminal — try typing &quot;retro&quot; anywhere, too."><span class="egg-glyph" aria-hidden="true">▦</span> classic terminal mode</a>
         </div>
     </footer>
-    <script src="script.js" defer></script>
+    <script src="modern.js" defer></script>
 </body>
+
 </html>

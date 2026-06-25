@@ -1,78 +1,132 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Research | Dr. Blaine Fisher</title>
-    <meta name="description" content="Research portfolio for Dr. Blaine Fisher, including MissDelta, Dos Aguadas Maya archaeology, LiDAR, GIS, and remote sensing.">
+    <title>Research — Dr. Blaine Fisher</title>
+    <meta name="description" content="Dr. Blaine Fisher's research: the $22M MissDelta coastal initiative, Classic Maya defensive earthworks at Dos Aguadas, and methods across LiDAR, GIS, multispectral, thermal, and photogrammetry.">
     <link rel="canonical" href="https://blainefisher.com/research.html">
-    <meta property="og:title" content="Research | Dr. Blaine Fisher">
-    <meta property="og:description" content="MissDelta, Dos Aguadas, LiDAR, GIS, drone sensing, and geospatial research.">
+    <meta property="og:type" content="profile">
+    <meta property="og:title" content="Research — Dr. Blaine Fisher">
+    <meta property="og:description" content="Coastal change, remote sensing, and archaeological landscapes — read from above with LiDAR and GIS.">
+    <meta property="og:url" content="https://blainefisher.com/research.html">
     <meta property="og:image" content="https://blainefisher.com/assets/BlaineFisher2-960.webp">
     <meta name="twitter:card" content="summary_large_image">
-    <link rel="icon" href="favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="styles.css">
+    <meta name="twitter:title" content="Research — Dr. Blaine Fisher">
+    <meta name="twitter:description" content="Coastal change, remote sensing, and archaeological landscapes — read from above with LiDAR and GIS.">
+    <meta name="theme-color" content="#0b0b0d">
+    <link rel="icon" href="favicon-modern.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..500&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="modern.css">
+    <noscript><style>.reveal,.bt-seg{opacity:1!important;transform:none!important;filter:none!important}</style></noscript>
 </head>
+
 <body>
-    <a href="#main-content" class="skip-link">Skip to main content</a>
-    <button id="sound-toggle" class="system-toggle" type="button" aria-pressed="false">[ SOUND: OFF ]</button>
-    <button id="theme-toggle" class="system-toggle theme-toggle" type="button" aria-pressed="false">[ CONTRAST: TERMINAL ]</button>
-    <div id="boot-screen" aria-hidden="true"><div id="boot-text"></div></div>
-    <header class="site-header">
-        <nav id="navbar" aria-label="Primary navigation">
-            <a href="classic.html#home" class="logo" aria-label="BF. Dr. Blaine Fisher home">BF.</a>
-            <button class="hamburger" type="button" aria-expanded="false" aria-controls="primary-nav">MENU</button>
-            <ul id="primary-nav" class="nav-links">
-                <li><a href="classic.html#about">About</a></li>
+    <a href="#top" class="skip-link">Skip to main content</a>
+    <div class="ambient" aria-hidden="true"><span class="orb orb-1"></span><span class="orb orb-2"></span><span class="grain"></span></div>
+    <div class="crt-wipe" aria-hidden="true"><span class="crt-line">LOADING MU-TH-UR 6000&hellip;</span></div>
+
+    <header class="nav-shell">
+        <nav class="nav" aria-label="Primary">
+            <a href="index.html" class="brand" data-logo aria-label="Blaine Fisher — home"><span class="brand-mark">BF</span><span class="brand-word">Blaine&nbsp;Fisher</span></a>
+            <ul class="nav-links" id="nav-links">
                 <li><a href="teaching.html">Teaching</a></li>
-                <li><a href="research.html">Research</a></li>
+                <li><a href="research.html" aria-current="page">Research</a></li>
                 <li><a href="writing.html">Writing</a></li>
                 <li><a href="speaking.html">Speaking</a></li>
                 <li><a href="consulting.html">Consulting</a></li>
                 <li><a href="press.html">Press</a></li>
-                <li><a href="contact.html">Contact</a></li>
             </ul>
+            <div class="nav-end">
+                <a href="contact.html" class="btn btn-pill btn-ghost nav-cta">Get in touch <span class="btn-ic" aria-hidden="true">&#8599;</span></a>
+                <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu"><span></span><span></span></button>
+            </div>
         </nav>
     </header>
-    <main id="main-content">
-        <section class="section-block">
+    <div class="mobile-menu" id="mobile-menu" hidden>
+        <ul class="mobile-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="teaching.html">Teaching</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="writing.html">Writing</a></li>
+            <li><a href="book.html">The AI Human</a></li>
+            <li><a href="speaking.html">Speaking</a></li>
+            <li><a href="consulting.html">Consulting</a></li>
+            <li><a href="press.html">Press</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <a class="mobile-classic" href="classic.html" data-classic>▦ Classic terminal mode</a>
+    </div>
+
+    <main id="top">
+        <section class="page-hero">
             <div class="container">
-                <div class="section-header">
-                    <span class="terminal-label">Remote sensing record</span>
-                    <h1>Research</h1>
-                    <p class="section-lede">Dr. Fisher's research joins geospatial science, coastal change, remote sensing, and archaeological landscapes.</p>
-                </div>
-                <div class="research-grid">
-                    <article class="terminal-card">
-                        <p class="card-kicker">2024-2029</p>
-                        <h2>MissDelta</h2>
-                        <p>MissDelta, the Mississippi River Delta Transition Initiative, is a $22M, five-year National Academies of Sciences, Engineering, and Medicine funded project. The consortium includes 14 institutions and focuses on the Birdsfoot Delta. Dr. Fisher contributes remote sensing and geospatial science work.</p>
-                        <ul class="tag-list"><li>LiDAR</li><li>Multispectral</li><li>Thermal</li><li>Photogrammetry</li><li>GIS</li></ul>
-                        <a href="https://missdelta.org/" target="_blank" rel="noopener noreferrer">Visit missdelta.org</a>
-                        <p class="todo-note">TODO: Confirm personal funding share and public collaborator names.</p>
+                <a class="back-link" href="index.html"><span aria-hidden="true">&#8592;</span> Blaine Fisher</a>
+                <p class="kicker reveal" data-reveal>Research</p>
+                <h1 class="page-title reveal" data-reveal data-delay="1">Reading terrain, <span class="ital">coast to canopy.</span></h1>
+                <p class="page-lede reveal" data-reveal data-delay="2">Geospatial science where the scale changes but the question stays grounded — from a vanishing river delta to Classic Maya defensive landscapes, all built on remote sensing, GIS, and spatial analysis.</p>
+            </div>
+        </section>
+
+        <section class="section" style="padding-top:0">
+            <div class="container">
+                <div class="bento">
+                    <article class="tile tile-lg reveal" data-reveal data-tilt>
+                        <div class="tile-top"><span class="tile-kicker">2024 — 2029 · National Academies</span><span class="tile-index">01</span></div>
+                        <h2 class="tile-title">MissDelta — Mississippi River Delta Transition Initiative</h2>
+                        <p class="tile-text">A $22M, five-year consortium of 14 institutions studying the Birdsfoot Delta, funded by the National Academies of Sciences, Engineering, and Medicine. Dr. Fisher leads remote sensing and geospatial science — capturing how the coast is changing and what can be done about it.</p>
+                        <ul class="tag-row"><li>LiDAR</li><li>Multispectral</li><li>Thermal</li><li>Photogrammetry</li><li>GIS</li></ul>
+                        <p style="margin-top:1.2rem"><a class="facet-link" href="https://missdelta.org/" target="_blank" rel="noopener noreferrer">Visit missdelta.org <span aria-hidden="true">&#8599;</span></a></p>
                     </article>
-                    <article class="terminal-card">
-                        <p class="card-kicker">Louisiana State University, 2024</p>
-                        <h2>Dos Aguadas, Guatemala</h2>
-                        <p>His dissertation, Strategic Fortifications and Warfare: Analyzing Defensive Earthworks at Dos Aguadas, Guatemala through LiDAR and GIS, examined Classic Maya defensive strategies in the Guatemalan Peten.</p>
-                        <ul class="tag-list"><li>LiDAR</li><li>GIS</li><li>Photogrammetry</li><li>Population estimation</li><li>Least-cost path</li><li>Line of sight</li><li>Volumetric labor analysis</li></ul>
-                        <a href="https://repository.lsu.edu/gradschool_dissertations/6415/" target="_blank" rel="noopener noreferrer">Read dissertation</a>
-                        <p class="todo-note">TODO: Confirm drone platform manufacturers and models for public listing.</p>
+                    <article class="tile tile-tall reveal" data-reveal data-tilt>
+                        <div class="tile-top"><span class="tile-kicker">LSU · Ph.D. dissertation, 2024</span><span class="tile-index">02</span></div>
+                        <h2 class="tile-title">Dos Aguadas, Guatemala</h2>
+                        <p class="tile-text"><em>Strategic Fortifications and Warfare: Analyzing Defensive Earthworks at Dos Aguadas, Guatemala through LiDAR and GIS</em> — a study of Classic Maya defensive strategy in the Petén, reconstructed from the landscape itself.</p>
+                        <ul class="tag-row"><li>LiDAR</li><li>GIS</li><li>Least-cost path</li><li>Line of sight</li><li>Volumetric labor</li><li>Population estimation</li></ul>
+                        <p style="margin-top:1.2rem"><a class="facet-link" href="https://repository.lsu.edu/gradschool_dissertations/6415/" target="_blank" rel="noopener noreferrer">Read the dissertation <span aria-hidden="true">&#8599;</span></a></p>
+                    </article>
+                    <article class="tile reveal" data-reveal data-tilt>
+                        <div class="tile-top"><span class="tile-kicker">Methods &amp; tools</span><span class="tile-index">03</span></div>
+                        <h2 class="tile-title">The geospatial stack</h2>
+                        <ul class="facet-points">
+                            <li>ArcGIS Pro, ArcPy &amp; QGIS</li>
+                            <li>LiDAR, multispectral, thermal &amp; photogrammetric sensing</li>
+                            <li>Least-cost path &amp; line-of-sight analysis</li>
+                            <li>Population estimation &amp; volumetric labor analysis</li>
+                        </ul>
                     </article>
                 </div>
-                <div class="initiative-panel">
-                    <h2>Methods and Tools</h2>
-                    <ul class="signal-list">
-                        <li>ArcGIS Pro, ArcPy, and QGIS.</li>
-                        <li>LiDAR, multispectral, thermal, and photogrammetric sensing.</li>
-                        <li>Least-cost path analysis and line-of-sight analysis.</li>
-                        <li>Population estimation and volumetric labor investment analysis.</li>
-                    </ul>
+
+                <div class="cta-band reveal" data-reveal>
+                    <h2>Research collaboration or geospatial work?</h2>
+                    <div class="cta-actions">
+                        <a class="btn btn-pill btn-solid" href="contact.html">Get in touch <span class="btn-ic" aria-hidden="true">&#8594;</span></a>
+                        <a class="btn btn-pill btn-outline" href="writing.html">Read the writing</a>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
-    <footer class="site-footer"><div class="container footer-grid"><div><h2>Dr. Blaine Fisher</h2><p>Research, terrain, and sensing.</p></div><nav aria-label="Footer links"><a href="classic.html">Home</a><a href="speaking.html">Speaking</a><a href="contact.html">Contact</a></nav></div></footer>
-    <script src="script.js" defer></script>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div class="footer-brand"><span class="footer-mark">Blaine Fisher</span><p>Technology, pedagogy, resilience, and terrain.</p></div>
+            <nav class="footer-nav" aria-label="Footer">
+                <a href="index.html">Home</a>
+                <a href="mailto:Bfisher3@tulane.edu">Email</a>
+                <a href="https://www.linkedin.com/in/blaine-fisher/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <a href="Blaine%20Fisher%20-%20CV.pdf">CV (PDF)</a>
+            </nav>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; 2026 Dr. Blaine Fisher. All rights reserved.</p>
+            <a class="classic-egg" href="classic.html" data-classic title="Boot the original MU-TH-UR 6000 terminal — try typing &quot;retro&quot; anywhere, too."><span class="egg-glyph" aria-hidden="true">▦</span> classic terminal mode</a>
+        </div>
+    </footer>
+    <script src="modern.js" defer></script>
 </body>
+
 </html>

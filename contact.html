@@ -1,51 +1,141 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact | Dr. Blaine Fisher</title>
-    <meta name="description" content="Contact Dr. Blaine Fisher for speaking, consulting, press, teaching, and research collaboration inquiries.">
+    <title>Contact — Dr. Blaine Fisher</title>
+    <meta name="description" content="Contact Dr. Blaine Fisher for speaking, consulting, teaching, press, or research collaboration.">
     <link rel="canonical" href="https://blainefisher.com/contact.html">
-    <meta property="og:title" content="Contact | Dr. Blaine Fisher">
-    <meta property="og:description" content="Speaking, consulting, press, teaching, and research collaboration inquiries.">
+    <meta property="og:type" content="profile">
+    <meta property="og:title" content="Contact — Dr. Blaine Fisher">
+    <meta property="og:description" content="Speaking, consulting, teaching, press, and research collaboration inquiries.">
+    <meta property="og:url" content="https://blainefisher.com/contact.html">
     <meta property="og:image" content="https://blainefisher.com/assets/BlaineFisher2-960.webp">
     <meta name="twitter:card" content="summary_large_image">
-    <link rel="icon" href="favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="styles.css">
+    <meta name="twitter:title" content="Contact — Dr. Blaine Fisher">
+    <meta name="twitter:description" content="Speaking, consulting, teaching, press, and research collaboration inquiries.">
+    <meta name="theme-color" content="#0b0b0d">
+    <link rel="icon" href="favicon-modern.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..500&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="modern.css">
+    <noscript><style>.reveal,.bt-seg{opacity:1!important;transform:none!important;filter:none!important}</style></noscript>
 </head>
+
 <body>
-    <a href="#main-content" class="skip-link">Skip to main content</a>
-    <button id="sound-toggle" class="system-toggle" type="button" aria-pressed="false">[ SOUND: OFF ]</button>
-    <button id="theme-toggle" class="system-toggle theme-toggle" type="button" aria-pressed="false">[ CONTRAST: TERMINAL ]</button>
-    <div id="boot-screen" aria-hidden="true"><div id="boot-text"></div></div>
-    <header class="site-header"><nav id="navbar" aria-label="Primary navigation"><a href="classic.html#home" class="logo" aria-label="BF. Dr. Blaine Fisher home">BF.</a><button class="hamburger" type="button" aria-expanded="false" aria-controls="primary-nav">MENU</button><ul id="primary-nav" class="nav-links"><li><a href="classic.html#about">About</a></li><li><a href="teaching.html">Teaching</a></li><li><a href="research.html">Research</a></li><li><a href="writing.html">Writing</a></li><li><a href="speaking.html">Speaking</a></li><li><a href="consulting.html">Consulting</a></li><li><a href="press.html">Press</a></li><li><a href="contact.html">Contact</a></li></ul></nav></header>
-    <main id="main-content">
-        <section class="section-block">
-            <div class="container two-column">
-                <div>
-                    <div class="section-header"><span class="terminal-label">Contact router</span><h1>Contact</h1><p class="section-lede">Use the form to open an email draft with inquiry context, or use the direct links.</p></div>
-                    <form class="contact-form" action="mailto:Bfisher3@tulane.edu" method="post" enctype="text/plain">
-                        <label for="inquiry-type">Inquiry type</label>
-                        <select id="inquiry-type" name="Inquiry type"><option>Speaking</option><option>Consulting</option><option>Press</option><option>Teaching</option><option>Research collaboration</option><option>General</option></select>
-                        <label for="name">Name</label><input id="name" name="Name" type="text" autocomplete="name">
-                        <label for="email">Email</label><input id="email" name="Email" type="email" autocomplete="email">
-                        <label for="message">Message</label><textarea id="message" name="Message" rows="8"></textarea>
-                        <button class="btn btn-primary" type="submit">Open Email Draft</button>
+    <a href="#top" class="skip-link">Skip to main content</a>
+    <div class="ambient" aria-hidden="true"><span class="orb orb-1"></span><span class="orb orb-2"></span><span class="grain"></span></div>
+    <div class="crt-wipe" aria-hidden="true"><span class="crt-line">LOADING MU-TH-UR 6000&hellip;</span></div>
+
+    <header class="nav-shell">
+        <nav class="nav" aria-label="Primary">
+            <a href="index.html" class="brand" data-logo aria-label="Blaine Fisher — home"><span class="brand-mark">BF</span><span class="brand-word">Blaine&nbsp;Fisher</span></a>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="teaching.html">Teaching</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="writing.html">Writing</a></li>
+                <li><a href="speaking.html">Speaking</a></li>
+                <li><a href="consulting.html">Consulting</a></li>
+                <li><a href="press.html">Press</a></li>
+            </ul>
+            <div class="nav-end">
+                <a href="contact.html" class="btn btn-pill btn-ghost nav-cta" aria-current="page">Get in touch <span class="btn-ic" aria-hidden="true">&#8599;</span></a>
+                <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu"><span></span><span></span></button>
+            </div>
+        </nav>
+    </header>
+    <div class="mobile-menu" id="mobile-menu" hidden>
+        <ul class="mobile-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="teaching.html">Teaching</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="writing.html">Writing</a></li>
+            <li><a href="book.html">The AI Human</a></li>
+            <li><a href="speaking.html">Speaking</a></li>
+            <li><a href="consulting.html">Consulting</a></li>
+            <li><a href="press.html">Press</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <a class="mobile-classic" href="classic.html" data-classic>▦ Classic terminal mode</a>
+    </div>
+
+    <main id="top">
+        <section class="page-hero">
+            <div class="container">
+                <a class="back-link" href="index.html"><span aria-hidden="true">&#8592;</span> Blaine Fisher</a>
+                <p class="kicker reveal" data-reveal>Contact</p>
+                <h1 class="page-title reveal" data-reveal data-delay="1">Let's build something <span class="ital">thoughtful.</span></h1>
+                <p class="page-lede reveal" data-reveal data-delay="2">Speaking, consulting, teaching, press, or research collaboration — tell me what you're working on and how I can help.</p>
+            </div>
+        </section>
+
+        <section class="section" style="padding-top:0">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-copy reveal" data-reveal>
+                        <h2 class="cv-col-title" style="margin-top:0">Direct lines</h2>
+                        <div class="contact-direct" style="margin-top:1.2rem">
+                            <a class="contact-line" href="mailto:Bfisher3@tulane.edu"><span class="cl-label">Email</span><span class="cl-value">Bfisher3@tulane.edu</span></a>
+                            <a class="contact-line" href="https://www.linkedin.com/in/blaine-fisher/" target="_blank" rel="noopener noreferrer"><span class="cl-label">LinkedIn</span><span class="cl-value">in/blaine-fisher</span></a>
+                            <a class="contact-line" href="https://news.tulane.edu/experts/profile/dr-blaine-fisher" target="_blank" rel="noopener noreferrer"><span class="cl-label">Tulane Experts</span><span class="cl-value">Profile ↗</span></a>
+                            <a class="contact-line" href="https://sopa.tulane.edu/about-sopa/advisors-faculty-staff/blaine-fisher" target="_blank" rel="noopener noreferrer"><span class="cl-label">SoPA bio</span><span class="cl-value">Faculty page ↗</span></a>
+                            <a class="contact-line" href="https://www.hstoday.us/author/blaine-fisher/" target="_blank" rel="noopener noreferrer"><span class="cl-label">HSToday</span><span class="cl-value">Author page ↗</span></a>
+                        </div>
+                        <p class="todo-note">Separate consulting / press contact line pending confirmation if different from the Tulane email.</p>
+                    </div>
+
+                    <form class="contact-form reveal" data-reveal id="contact-form" action="mailto:Bfisher3@tulane.edu" method="post" enctype="text/plain" novalidate>
+                        <div class="field">
+                            <label for="inquiry">Inquiry type</label>
+                            <select id="inquiry" name="Inquiry">
+                                <option>Speaking</option>
+                                <option>Consulting</option>
+                                <option>Teaching</option>
+                                <option>Press</option>
+                                <option>Research collaboration</option>
+                                <option>General</option>
+                            </select>
+                        </div>
+                        <div class="field">
+                            <label for="cname">Name</label>
+                            <input id="cname" name="Name" type="text" autocomplete="name" required aria-describedby="err-cname">
+                            <p class="field-error" id="err-cname" data-error-for="cname">Please add your name.</p>
+                        </div>
+                        <div class="field">
+                            <label for="cemail">Email</label>
+                            <input id="cemail" name="Email" type="email" autocomplete="email" required aria-describedby="err-cemail">
+                            <p class="field-error" id="err-cemail" data-error-for="cemail">Please add a valid email.</p>
+                        </div>
+                        <div class="field">
+                            <label for="cmsg">Message</label>
+                            <textarea id="cmsg" name="Message" rows="5" required aria-describedby="err-cmsg"></textarea>
+                            <p class="field-error" id="err-cmsg" data-error-for="cmsg">A short note helps me route this.</p>
+                        </div>
+                        <button class="btn btn-pill btn-solid btn-block" type="submit">Open email draft <span class="btn-ic" aria-hidden="true">&#8594;</span></button>
                     </form>
                 </div>
-                <aside class="quick-facts">
-                    <h2>Direct Links</h2>
-                    <p><a href="mailto:Bfisher3@tulane.edu">Bfisher3@tulane.edu</a></p>
-                    <p><a href="https://www.linkedin.com/in/blaine-fisher/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
-                    <p><a href="https://news.tulane.edu/experts/profile/dr-blaine-fisher" target="_blank" rel="noopener noreferrer">Tulane Experts</a></p>
-                    <p><a href="https://sopa.tulane.edu/about-sopa/advisors-faculty-staff/blaine-fisher" target="_blank" rel="noopener noreferrer">SoPA faculty bio</a></p>
-                    <p><a href="https://www.hstoday.us/author/blaine-fisher/" target="_blank" rel="noopener noreferrer">HSToday author page</a></p>
-                    <p class="todo-note">TODO: Confirm consulting and press contact line if separate from Tulane email.</p>
-                </aside>
             </div>
         </section>
     </main>
-    <footer class="site-footer"><div class="container footer-grid"><div><h2>Dr. Blaine Fisher</h2><p>Contact routing.</p></div><nav aria-label="Footer links"><a href="classic.html">Home</a><a href="consulting.html">Consulting</a><a href="press.html">Press</a></nav></div></footer>
-    <script src="script.js" defer></script>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div class="footer-brand"><span class="footer-mark">Blaine Fisher</span><p>Technology, pedagogy, resilience, and terrain.</p></div>
+            <nav class="footer-nav" aria-label="Footer">
+                <a href="index.html">Home</a>
+                <a href="mailto:Bfisher3@tulane.edu">Email</a>
+                <a href="https://www.linkedin.com/in/blaine-fisher/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <a href="Blaine%20Fisher%20-%20CV.pdf">CV (PDF)</a>
+            </nav>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; 2026 Dr. Blaine Fisher. All rights reserved.</p>
+            <a class="classic-egg" href="classic.html" data-classic title="Boot the original MU-TH-UR 6000 terminal — try typing &quot;retro&quot; anywhere, too."><span class="egg-glyph" aria-hidden="true">▦</span> classic terminal mode</a>
+        </div>
+    </footer>
+    <script src="modern.js" defer></script>
 </body>
+
 </html>
